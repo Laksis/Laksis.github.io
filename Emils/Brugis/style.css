@@ -1,0 +1,194 @@
+body {
+    margin: 0 auto;
+    font-family: Arial, Halvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #eaebee;
+}
+
+/*Global**/
+.conteiner{
+  width: 80%;
+  margin:auto;
+  overflow: hidden;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/*Heder*/
+
+
+#fons{
+  background: #273a60;
+  color: #ffffff;
+  border-top: #eaebee 1px solid;
+}
+
+#brandingphoneicon{
+  float: right;
+}
+
+#brandingphoneicon li{
+  display: inline-flex;
+  margin: 10px 0 8px 0;
+}
+
+
+#brandingphone{
+  float: right;
+}
+
+#brandingphone a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: lighter;
+    margin: 0;
+  }
+
+
+#brandingphone li{
+  display: inline-flex;
+  margin: 12px 0px 8px 10px;
+}
+
+#brandingphone h1 {
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+#brandingemailicon{
+  float: right;
+}
+
+#brandingemailicon li{
+  display: inline-flex;
+  margin: 10px 10px 8px 20px;
+}
+
+
+#brandingemail{
+  float: right;
+}
+
+#brandingemail a{
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+#brandingemail li{
+  display:inline-flex;
+  margin: 12px 15px 8px 0;
+}
+
+#brandingemail h1{
+  font-size: 20px;
+  font-weight: lighter;
+  margin: 0;
+}
+
+#brandingface{
+  float: right;
+}
+
+#brandingface li{
+  display:inline-flex;
+  margin: 10px 0 8px 0;
+}
+
+.ikona{
+  width: 22px;
+  height: 22px;
+}
+
+
+
+header {
+  background: #273a60;
+  color: #ffffff;
+  padding-top: 10px;
+  min-height: 20px;
+  border-bottom: #eaebee 1px solid;
+}
+
+header a{
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+}
+
+header a:hover{
+color: #f35321;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 16px;
+}
+
+header li {
+  float: left;
+  display: inline;
+  padding: 0 20px 0 20px;
+}
+
+header #branding{
+  float: left;
+}
+
+header #branding h1{
+  margin: 0;
+}
+
+header nav{
+  float: right;
+  margin-top: 15px;
+}
+
+/* Cover ***/
+video{
+  width: 100%;
+  height: auto;
+}
+
+/*Kastes zem cover ***/
+
+#boxes {
+  margin: 20px;
+}
+
+#boxes .box{
+  float: left;
+  text-align: center;
+  width: 30%;
+  padding: 10px;
+}
+#boxes .box img{
+  border-radius: 5px;
+  width: 100%;
+}
+
+.box h1 {
+  text-transform: uppercase;
+  font-size: 16px;
+  color: #273a60;
+}
+
+.box p {
+
+  text-align: justify;
+}
+
+footer{
+  padding: 10px;
+  margin-top: 10px;
+  color: #ffffff;
+  background-color: #f35321;
+  text-align: center;
+}
