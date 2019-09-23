@@ -24,11 +24,15 @@ ul {
 #fons{
   background: #273a60;
   color: #ffffff;
-  border-top: #eaebee 1px solid;
+  /* border-top: #eaebee 1px solid; */
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 60px; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 
 #brandingphoneicon{
-  float: right;
+  float: left;
 }
 
 #brandingphoneicon li{
@@ -38,7 +42,7 @@ ul {
 
 
 #brandingphone{
-  float: right;
+  float: left;
 }
 
 #brandingphone a{
@@ -62,7 +66,7 @@ ul {
 }
 
 #brandingemailicon{
-  float: right;
+  float: left;
 }
 
 #brandingemailicon li{
@@ -72,7 +76,7 @@ ul {
 
 
 #brandingemail{
-  float: right;
+  float: left;
 }
 
 #brandingemail a{
@@ -95,7 +99,7 @@ ul {
 }
 
 #brandingface{
-  float: right;
+  float: left;
 }
 
 #brandingface li{
@@ -113,9 +117,13 @@ ul {
 header {
   background: #273a60;
   color: #ffffff;
-  padding-top: 10px;
-  min-height: 20px;
-  border-bottom: #eaebee 1px solid;
+  padding-top: 20px;
+  min-height: 60px;
+  /* border-bottom: #eaebee 1px solid; */
+  overflow: hidden;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%;
 }
 
 header a{
@@ -155,6 +163,7 @@ header nav{
 video{
   width: 100%;
   height: auto;
+  padding-top: 106px;
 }
 
 /*Kastes zem cover ***/
@@ -171,7 +180,7 @@ video{
 }
 #boxes .box img{
   border-radius: 5px;
-  width: 100%;
+  width: 80%;
 }
 
 .box h1 {
@@ -181,12 +190,15 @@ video{
 }
 
 .box p {
-
-  text-align: justify;
+  text-indent: 10%;
+  text-align: left;
+  letter-spacing: 1px;
+  font-weight: bold;
+  line-height: 1.6em;
 }
 
 footer{
-  padding: 10px;
+  padding: 5px;
   margin-top: 10px;
   color: #ffffff;
   background-color: #f35321;
