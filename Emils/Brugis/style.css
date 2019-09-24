@@ -18,6 +18,8 @@ ul {
   padding: 0;
 }
 
+
+
 .conteiner #linija {
   border-bottom: #ffffff;
 }
@@ -26,6 +28,8 @@ ul {
   width: 22px;
   height: 22px;
 }
+
+
 
 /*Heder*/
 
@@ -39,6 +43,7 @@ header {
   top: 0;
   width: 100%;
   border-bottom: #ffffff 1px solid;
+  z-index: +1;
 }
 
 header a{
@@ -59,8 +64,6 @@ header ul {
   text-align: center;
   border-top: #ffffff 1px solid;
   font-size: 35px;
-  list-style: none;
-  margin: 0 0 0 -0.8125em;
   padding-bottom:6px;
 
 }
@@ -120,7 +123,7 @@ video{
   padding-top: 128px;
 }
 
-/*Kastes zem cover ***/
+/*Boxes ***/
 
 #boxes {
   margin: 20px;
