@@ -18,93 +18,8 @@ ul {
   padding: 0;
 }
 
-/*Heder*/
-
-
-#fons{
-  background: #273a60;
-  color: #ffffff;
-  /* border-top: #eaebee 1px solid; */
-  overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 60px; /* Position the navbar at the top of the page */
-  width: 100%;
-}
-
-#brandingphoneicon{
-  float: left;
-}
-
-#brandingphoneicon li{
-  display: inline-flex;
-  margin: 10px 0 8px 0;
-}
-
-
-#brandingphone{
-  float: left;
-}
-
-#brandingphone a{
-    color: #ffffff;
-    text-decoration: none;
-    font-size: 20px;
-    font-weight: lighter;
-    margin: 0;
-  }
-
-
-#brandingphone li{
-  display: inline-flex;
-  margin: 12px 0px 8px 10px;
-}
-
-#brandingphone h1 {
-  font-size: 20px;
-  font-weight: lighter;
-  margin: 0;
-}
-
-#brandingemailicon{
-  float: left;
-}
-
-#brandingemailicon li{
-  display: inline-flex;
-  margin: 10px 10px 8px 20px;
-}
-
-
-#brandingemail{
-  float: left;
-}
-
-#brandingemail a{
-  color: #ffffff;
-  text-decoration: none;
-  font-size: 20px;
-  font-weight: lighter;
-  margin: 0;
-}
-
-#brandingemail li{
-  display:inline-flex;
-  margin: 12px 15px 8px 0;
-}
-
-#brandingemail h1{
-  font-size: 20px;
-  font-weight: lighter;
-  margin: 0;
-}
-
-#brandingface{
-  float: left;
-}
-
-#brandingface li{
-  display:inline-flex;
-  margin: 10px 0 8px 0;
+.conteiner #linija {
+  border-bottom: #ffffff;
 }
 
 .ikona{
@@ -112,38 +27,42 @@ ul {
   height: 22px;
 }
 
-
+/*Heder*/
 
 header {
   background: #273a60;
   color: #ffffff;
-  padding-top: 20px;
-  min-height: 60px;
-  /* border-bottom: #eaebee 1px solid; */
+  padding-top: 10px;
+  min-height: 70px;
   overflow: hidden;
-  position: fixed; /* Set the navbar to fixed position */
-  top: 0; /* Position the navbar at the top of the page */
+  position: fixed;
+  top: 0;
   width: 100%;
+  border-bottom: #ffffff 1px solid;
 }
 
 header a{
   color: #ffffff;
   text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
+  font-size: 20px;
 }
 
-header a:hover{
-color: #f35321;
-text-decoration: none;
-text-transform: uppercase;
-font-size: 16px;
-}
 
 header li {
-  float: left;
+  float: center;
   display: inline;
-  padding: 0 20px 0 20px;
+  padding: 0px 20px 0 20px;
+
+}
+
+header ul {
+  text-align: center;
+  border-top: #ffffff 1px solid;
+  font-size: 35px;
+  list-style: none;
+  margin: 0 0 0 -0.8125em;
+  padding-bottom:6px;
+
 }
 
 header #branding{
@@ -154,16 +73,61 @@ header #branding h1{
   margin: 0;
 }
 
-header nav{
-  float: right;
+#branding{
   margin-top: 15px;
 }
+
+header nav{
+  float: center;
+  padding-top: 50px;
+  margin: 20px 0px 0px 0;
+}
+
+nav a:hover{
+  color: #f35321;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+
+.kontaktujosla{
+  float: right;
+  margin: 11px 0 0 0;
+}
+
+
+.kontaktujosla h1 {
+  font-family: Arial, Halvetica, sans-serif;
+  font-size: 20px;
+  font-weight: lighter;
+}
+
+
+.ikonujosla{
+  float: right;
+  margin: 23px 5px 0 15px;
+}
+
+.dropdownpakalpojumi a{
+  text-decoration: none;
+}
+
+.dropdownpakalpojumi nav {
+  font-family: Arial, Halvetica, sans-serif;
+}
+
+
+
+header nav #valodas {
+  float: right;
+}
+
 
 /* Cover ***/
 video{
   width: 100%;
   height: auto;
-  padding-top: 106px;
+  padding-top: 128px;
 }
 
 /*Kastes zem cover ***/
