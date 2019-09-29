@@ -1,9 +1,9 @@
 body {
     margin: 0 auto;
-    font-family: Arial, Halvetica, sans-serif;
+    font-family: esteban, serif, Georgia, Arial, Halvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #eaebee;
+    background-color: #ffffff;
 }
 
 /*Global**/
@@ -18,10 +18,19 @@ ul {
   padding: 0;
 }
 
+li{
+  padding: 0;
+  margin: 0;
+}
 
+p {
+
+font-size: 16px;
+
+}
 
 .conteiner #linija {
-  border-bottom: #ffffff;
+  border-bottom: #a7d129;
 }
 
 .ikona{
@@ -30,11 +39,10 @@ ul {
 }
 
 
-
 /*Heder*/
 
 header {
-  background: #273a60;
+  background: #33343C;
   color: #ffffff;
   padding-top: 10px;
   min-height: 70px;
@@ -42,7 +50,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: #ffffff 1px solid;
+  border-bottom: #a7d129 1px solid;
   z-index: +1;
 }
 
@@ -62,7 +70,7 @@ header li {
 
 header ul {
   text-align: center;
-  border-top: #ffffff 1px solid;
+  border-top: #a7d129 1px solid;
   font-size: 35px;
   padding-bottom:6px;
 
@@ -87,7 +95,7 @@ header nav{
 }
 
 nav a:hover{
-  color: #f35321;
+  color: #a7d129;
   text-decoration: none;
   font-size: 20px;
 }
@@ -123,6 +131,25 @@ video{
   padding-top: 128px;
 }
 
+.centrs li{
+  background-color: #33343C;
+  color: #ffffff;
+  margin: 0px 0 0 0px ;
+  padding: 0px 0 0px 10px;
+  line-height: 35px;
+}
+
+
+#padomi h1 {
+font-size: 21px;
+}
+
+#padomi{
+  text-indent: 2%;
+  letter-spacing: 0.4px;
+}
+
+
 /*Boxes ***/
 
 #boxes {
@@ -149,7 +176,7 @@ video{
 .box p {
   text-indent: 10%;
   text-align: left;
-  letter-spacing: 1px;
+  letter-spacing: 0.4px;
   font-weight: bold;
   line-height: 1.6em;
 }
@@ -158,6 +185,6 @@ footer{
   padding: 5px;
   margin-top: 10px;
   color: #ffffff;
-  background-color: #f35321;
+  background-color: #33343C;
   text-align: center;
 }
