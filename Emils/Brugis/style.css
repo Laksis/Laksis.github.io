@@ -26,6 +26,7 @@ li{
 p {
 
 font-size: 16px;
+color: #3E3E3E;
 
 }
 
@@ -171,7 +172,7 @@ font-size: 21px;
 .box h1 {
   text-transform: uppercase;
   font-size: 16px;
-  color: #273a60;
+  color: #292929;
 }
 
 .box p {
