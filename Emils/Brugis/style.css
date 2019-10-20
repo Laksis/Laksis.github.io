@@ -3,7 +3,7 @@ body {
     font-family: Arial, Halvetica, sans-serif;
     padding: 0;
     margin: 0;
-    background-color: #ffffff;
+    background-color: #FFFFFF;
 }
 
 /*Global**/
@@ -23,11 +23,15 @@ li{
   margin: 0;
 }
 
+h1 {
+  font-weight: 450;
+}
+
 p {
-
 font-size: 16px;
-color: #3E3E3E;
-
+color: #383636;
+line-height: 1.4em;
+font-weight: 500;
 }
 
 .conteiner #linija {
@@ -43,20 +47,20 @@ color: #3E3E3E;
 /*Heder*/
 
 header {
-  background: #33343C;
-  color: #ffffff;
+  background: #FFFFFF;
+  color: #383636;
   padding-top: 10px;
   min-height: 70px;
   overflow: hidden;
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: #a7d129 1px solid;
+  border-bottom: #A7D129 1px solid;
   z-index: +1;
 }
 
 header a{
-  color: #ffffff;
+  color: #383636;
   text-decoration: none;
   font-size: 20px;
 }
@@ -71,7 +75,7 @@ header li {
 
 header ul {
   text-align: center;
-  border-top: #a7d129 1px solid;
+  border-top: #A7D129 1px solid;
   font-size: 35px;
   padding-bottom:6px;
 
@@ -96,7 +100,7 @@ header nav{
 }
 
 nav a:hover{
-  color: #a7d129;
+  color: rgb(167, 209, 41,0.8);
   text-decoration: none;
   font-size: 20px;
 }
@@ -133,8 +137,8 @@ video{
 }
 
 .centrs li{
-  background-color: #33343C;
-  color: #ffffff;
+  background-color: rgba(122, 125, 144, 0.15);
+  color: #383636;
   margin: 0px 0 0 0px ;
   padding: 0px 0 0px 10px;
   line-height: 35px;
@@ -179,13 +183,17 @@ font-size: 21px;
   text-indent: 10%;
   text-align: left;
   letter-spacing: 0.4px;
-  line-height: 1.6em;
 }
 
 footer{
   padding: 5px;
   margin-top: 10px;
-  color: #ffffff;
-  background-color: #33343C;
+  background-color: rgba(56,54,54, 0.15); ;
   text-align: center;
+}
+
+footer p {
+  font-family: Arial, Halvetica, sans-serif;
+  color: #383636;
+  letter-spacing: 0.6px;
 }
