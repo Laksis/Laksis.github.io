@@ -55,7 +55,7 @@ header {
   position: fixed;
   top: 0;
   width: 100%;
-  border-bottom: #A7D129 1px solid;
+  border-bottom: #383636 1px solid;
   z-index: +1;
 }
 
@@ -75,7 +75,7 @@ header li {
 
 header ul {
   text-align: center;
-  border-top: #A7D129 1px solid;
+  border-top: #383636 1px solid;
   font-size: 35px;
   padding-bottom:6px;
 
@@ -134,6 +134,7 @@ video{
   width: 100%;
   height: auto;
   padding-top: 128px;
+  border-bottom: #383636 1px solid;
 }
 
 .centrs li{
@@ -187,14 +188,18 @@ font-size: 21px;
 }
 
 footer{
-  padding: 5px;
-  margin-top: 10px;
+  padding: 0px;
+  margin: 0px;
   background-color: rgba(56,54,54, 0.15);
   text-align: center;
+  bottom: 0;
 }
 
 footer p {
   font-family: Arial, Halvetica, sans-serif;
   color: #383636;
   letter-spacing: 0.6px;
+  line-height: 35px;
+  margin: 0;
+  padding: 0;
 }
