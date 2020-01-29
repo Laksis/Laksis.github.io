@@ -1,0 +1,26 @@
+body {
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin-top: 50px;
+}
+
+.container-box {
+	flex-basis: 27%;
+	text-align: center;
+}
+
+@media(min-width: 468px){
+	.container{
+	border: 1px solid;
+	width: 80%;
+	margin: auto; /*noliek div konteineri pa vidu ekrānam */
+	overflow: hidden;
+	display: flex;
+	text-align: center;
+	justify-content: space-between;
+
+}
+}
