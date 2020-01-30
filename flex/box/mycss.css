@@ -10,25 +10,13 @@ body {
 }
 
 
-.box-1{
+.box{
  flex: 1;
  border: 1px solid;
  padding: 0rem 2rem 0rem 2rem ;
  text-align: center;
 }
 
-.box-2{
-flex: 1;
-padding: 0rem 2rem 0rem 2rem ;
-text-align: center;	
-}
-
-.box-3{
-flex: 1;
-border: 1px solid;
-padding: 0rem 2rem 0rem 2rem ;
-text-align: center;
-}
 
 @media(min-width: 768px){
 	.container{
