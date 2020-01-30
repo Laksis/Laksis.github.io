@@ -1,0 +1,93 @@
+body {
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 80%;
+}
+
+
+nav {
+	/* background , color, font-family, fotnt-size priekš navigācijas */	
+	
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 0;
+	text-align: center;
+}
+
+nav li {
+	background-color:  #333;
+	margin: 2px;
+	padding: 2px;
+	}
+
+nav a {
+	text-decoration: none;
+	display: block;
+	padding: 0 20px 0 20px;
+	color: #fff;
+}
+
+nav a:hover {
+	background-color: #555;
+}
+
+
+@media screen and (min-width:768px){
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+
+	nav li{
+		background-color:#f4f4f4;
+	}
+
+	nav a {
+	text-decoration: none;
+	display: block;
+	padding: 0 20px 0 20px;
+	color: #555;
+	}
+
+	nav a:hover {
+		background-color:#f4f4f4;
+	}
+	
+
+	.container-1 {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav li {
+		margin: 0;
+	}
+
+}
+
+
+
+
+
+.box{
+ flex: 1;
+ text-align: center;
+}
+
+@media (min-width: 768px){
+	.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+	}
+
+	.container p{
+padding: 0px 35px;
+	}
+}
