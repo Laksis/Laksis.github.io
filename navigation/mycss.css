@@ -1,3 +1,5 @@
+/****************** Globālas lietas *******************/
+
 body {
 	background-color: #f4f4f4;
 	color: #555;
@@ -8,28 +10,119 @@ body {
 	width: 80%;
 }
 
-
-nav {
-	/* background , color, font-family, fotnt-size priekš navigācijas */	
-	
-}
-
-nav ul {
+ul {
 	list-style-type: none;
 	padding: 0;
+}
+
+ul a {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/************************ Header lapas augšpuse logo un socialie tīkli ************/
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+ header ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header a{
+	color: #3b5998;
+}
+
+header h1{
+	color:#ffa500;
+}
+
+.logo {
+	margin: 0 auto;
+	background-color: #555;
+	width: 100%;
+}
+
+header h2{
+	color: #555;
+}
+
+.container-social{
+	margin: 0 auto;
+}
+
+
+.container-social ul{
+	margin: 0;
+	padding: 0;
+}
+
+.container-social li {
+	padding: 0 8px;
+}
+
+
+@media screen and (min-width:768px){
+	header{
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.logo {
+	margin: 0;
+	background-color: #f4f4f4;
+	width: auto;
+}
+
+	.container-social{
+	margin:0;
+}
+}
+
+
+/************ Soc ikonas header *****************************/
+
+
+
+.fab {
+	color:#555;
+}
+
+ .far {
+   color:#555;
+}
+
+.fas {
+	color:#555;
+}
+
+
+
+
+/* ******************* Navigācija ***********************/
+
+
+nav ul {
 	text-align: center;
 }
 
 nav li {
-	background-color:  #e9e9e9;
+	background-color:#e9e9e9;
 	margin: 1px;
 	line-height: 2.5em;
 	border-radius: 10px;
-
 	}
 
 nav a {
-	text-decoration: none;
+	
 	display: block;
 	padding: 0 20px 0 20px;
 	color: #445;
@@ -80,9 +173,23 @@ nav a:hover {
 
 }
 
+/***************** Cover video jeb galvenais baneris *********/
+
+video{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin: 0 auto;
+  width: 100%;
+  height: auto;
+}
 
 
+/* ************************* Pakalpojumu kastes ************ */
 
+section {
+	padding-top: 50px;
+}
 
 .box{
  flex: 1;
