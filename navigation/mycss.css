@@ -15,9 +15,6 @@ ul {
 	padding: 0;
 }
 
-ul a {
-	text-decoration: none;
-}
 
 a {
 	text-decoration: none;
@@ -175,19 +172,39 @@ nav a:hover {
 
 /***************** Cover video jeb galvenais baneris *********/
 
-video{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-around;
-	margin: 0 auto;
-  width: 100%;
-  height: auto;
+video {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 auto;
+  		width: 100%;
+  		height: auto;
+	}
+
+section{
+	padding: 0;
+}
+
+source {
+	display: inline-block;
+	min-height: 300px;
+}
+
+@media screen and (min-width:768px){
+	video{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 auto;
+  		width: 100%;
+  		height: auto;
+	}
 }
 
 
 /* ************************* Pakalpojumu kastes ************ */
 
-section {
+section .pakalpojumi {
 	padding-top: 50px;
 }
 
