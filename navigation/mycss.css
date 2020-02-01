@@ -7,8 +7,22 @@ body {
 	font-size: 16px;
 	line-height: 1.6em;
 	margin: auto;
-	width: 80%;
+	width: 100%;
 }
+
+
+@media screen and (min-width:768px){
+	body{
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 80%;
+	}
+}
+
 
 ul {
 	list-style-type: none;
@@ -26,6 +40,7 @@ header {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 0 auto;
+	width: 100%;
 }
 
  header ul{
@@ -188,17 +203,6 @@ section{
 source {
 	display: inline-block;
 	min-height: 300px;
-}
-
-@media screen and (min-width:768px){
-	video{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		margin: 0 auto;
-  		width: 100%;
-  		height: auto;
-	}
 }
 
 
