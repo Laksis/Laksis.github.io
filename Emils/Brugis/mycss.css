@@ -309,7 +309,8 @@ video {
 }
 
 .box img {
-	border: 2px solid rgba(122, 125, 144, 0.15);
+	border: 3px solid rgba(122, 125, 144, 0.15);
+	opacity: 0.9;
 }
 
 
