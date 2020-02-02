@@ -1,0 +1,349 @@
+/************ Krāsu palete 
+Are ya yellow?!: #feda6a
+
+Silver Fox: #d4d4dc
+
+Deep Matte Grey: #393f4d
+
+Dark Slate: #1d1e22
+
+
+************/
+
+
+
+
+
+
+
+
+
+
+/****************** Globālas lietas *******************/
+
+body {
+	background-color: #1d1e22;
+	color: #d4d4dc;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 100%;
+}
+
+
+@media screen and (min-width:768px){
+	body{
+	background-color: #1d1e22;
+	color: #d4d4dc;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 80%;
+	}
+}
+
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/************************ Header lapas augšpuse logo un socialie tīkli ************/
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0;
+}
+
+ header ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header a{
+	color: #d4d4dc;
+}
+
+header h1{
+	color:#d4d4dc;
+}
+
+.logo {
+	margin: 0 auto;
+	background-color: #1d1e22;
+	width: 100%;
+}
+
+header h2{
+	color: #d4d4dc;
+}
+
+.container-social{
+	margin: 0 auto;
+}
+
+
+.container-social ul{
+	margin: 0;
+}
+
+.container-social li {
+	padding: 0 8px;
+}
+
+
+@media screen and (min-width:768px){
+	header{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	}
+
+	header h1 {
+		text-decoration: underline;
+	}
+
+	.logo {
+	margin: 0;
+	background-color: #1d1e22;
+	width: auto;
+}
+
+	.container-social{
+	margin:0;
+}
+}
+
+
+/************ Soc ikonas header *****************************/
+
+
+
+.fab {
+	color:#fff;
+}
+
+ .far {
+   color:#fff;
+}
+
+.fas {
+	color:#fff;
+}
+
+
+
+
+/* ******************* Navigācija ***********************/
+
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	background-color:#d4d4dc;
+	margin: 1px;
+	line-height: 2.4em;
+	}
+
+nav a {
+	display: block;
+	color: #1d1e22;
+	font-size: 20px;
+}
+
+nav a:hover {
+	color: #000;
+	background-color: #fff;
+	border-radius: 10px;
+}
+
+
+@media screen and (min-width:768px){
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+
+	nav li{
+		background-color:#1d1e22;
+		margin: 0px;
+		line-height: 0em;
+		border-radius: 0px;
+		padding: 0 20px 0 20px;
+
+	}
+
+	.sakums {
+		padding: 0 20px 0 0;
+	}
+
+	nav a {
+	text-decoration: none;
+	display: block;
+	color: #d4d4dc;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 15px;
+	}
+
+	nav a:hover {
+		background-color:#1d1e22;
+		border-radius: 0px;
+		color: #feda6a;
+	}
+	
+
+	.container-1 {
+		display: flex;
+		justify-content: flex-start;
+	}
+
+	nav li {
+		margin: 0;
+	}
+
+}
+
+/***************** Cover video jeb galvenais baneris *********/
+
+video {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 auto;
+  		width: 100%;
+  		height: auto;
+  		border-radius: 3px;
+	}
+
+section{
+	padding: 0;
+}
+
+source {
+	display: inline-block;
+	min-height: 300px;
+}
+
+/******************************Par mums ! Apraksts par mūsu uzņēmumu*********************/
+
+.parmums-1{
+	width: 80%;
+	margin: 0 auto;
+	padding: 0;
+}
+
+.parmums-1 h1{
+	text-align: center;
+	background-color: rgba(122, 125, 144, 0.15);
+	padding: 3px;
+}
+
+
+@media screen and (min-width:768px){
+	.parmums-1 h1{
+	text-align: left;
+	background-color: rgba(122, 125, 144, 0.15);
+	padding: 5px;
+}
+
+.parmums-1{
+	width: 100%;
+}
+
+}
+
+
+/* ************************* Pakalpojumu kastes ************ */
+
+.pakalpojumi-1 {
+	padding-top: 0px;
+	width: 80%;
+	margin: auto;
+}
+
+.pakalpojumi-1 h1 {
+	text-align: center;
+	background-color: rgba(122, 125, 144, 0.15);
+	padding: 3px;
+}
+
+.pakalpojumi-1 p {
+	text-align: left;
+	width: 80%;
+	margin: auto;
+	padding-bottom: 5px;
+}
+
+.box{
+ flex: 1;
+ text-align: center;
+}
+
+.box img {
+	border-radius: 8px;
+	padding: 5px;
+}
+
+@media (min-width: 768px){
+	.pakalpojumi-1 {
+	padding-top: 0px;
+	width: 100%;
+	margin: 0;
+}
+
+	.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+	}
+
+.pakalpojumi-1 h1{
+	text-align: left;
+	background-color: rgba(122, 125, 144, 0.15);
+	padding: 5px;
+}
+
+	.container p{
+padding: 0px 35px;
+	}
+}
+
+
+/*********** Footer , lapas pēda ***************/
+
+footer {
+	border-top: 1px solid #d4d4dc;
+	margin-top: 30px;
+}
+
+footer p {
+	text-align: center;
+	margin: 10px;
+	padding: 8px;
+}
+
+@media screen and (min-width:768px){
+	footer{
+	border-top: 1px solid #d4d4dc;
+	margin-top: 50px;
+	}
+
+	footer p {
+	text-align: center;
+	margin: 15px;
+	padding: 10px;
+	}
+}

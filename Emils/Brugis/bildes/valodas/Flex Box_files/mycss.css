@@ -1,0 +1,195 @@
+/****************** Globālas lietas *******************/
+
+body {
+	background-color: #f4f4f4;
+	color: #555;
+	font-family: Arial, Helvetica;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 80%;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+ul a {
+	text-decoration: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+/************************ Header lapas augšpuse logo un socialie tīkli ************/
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+ header ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+header a{
+	color: #3b5998;
+}
+
+header h1{
+	color:#ffa500;
+}
+
+.logo {
+	margin: 0 auto;
+	background-color: #555;
+	width: 100%;
+}
+
+header h2{
+	color: #555;
+}
+
+.container-social{
+	margin: 0 auto;
+}
+
+
+.container-social ul{
+	margin: 0;
+	padding: 0;
+}
+
+.container-social li {
+	padding: 0 8px;
+}
+
+
+@media screen and (min-width:768px){
+	header{
+	display: flex;
+	justify-content: space-between;
+	}
+
+	.logo {
+	margin: 0;
+	background-color: #f4f4f4;
+	
+}
+
+	.container-social{
+	margin:0;
+}
+}
+
+
+/************ Soc ikonas header *****************************/
+
+
+
+.fab {
+	color:#555;
+}
+
+ .far {
+   color:#555;
+}
+
+.fas {
+	color:#555;
+}
+
+
+
+
+/* ******************* Navigācija ***********************/
+
+
+nav ul {
+	text-align: center;
+}
+
+nav li {
+	background-color:#e9e9e9;
+	margin: 1px;
+	line-height: 2.5em;
+	border-radius: 10px;
+	}
+
+nav a {
+	
+	display: block;
+	padding: 0 20px 0 20px;
+	color: #445;
+}
+
+nav a:hover {
+	color: #000;
+	background-color: #dcdcdc;
+	border-radius: 10px;
+}
+
+
+@media screen and (min-width:768px){
+	nav ul{
+		display: flex;
+		justify-content: center;
+	}
+
+	nav li{
+		background-color:#f4f4f4;
+		margin: 0px;
+		line-height: 0em;
+		border-radius: 0px;
+
+	}
+
+	nav a {
+	text-decoration: none;
+	display: block;
+	padding: 0 20px 0 20px;
+	color: #555;
+	}
+
+	nav a:hover {
+		background-color:#f4f4f4;
+		border-radius: 0px;
+	}
+	
+
+	.container-1 {
+		display: flex;
+		justify-content: space-around;
+	}
+
+	nav li {
+		margin: 0;
+	}
+
+}
+
+
+
+/* ************************* Pakalpojumu kastes ************ */
+
+.box{
+ flex: 1;
+ text-align: center;
+}
+
+@media (min-width: 768px){
+	.container{
+display: flex;
+flex-wrap: wrap;
+justify-content: space-between;
+	}
+
+	.container p{
+padding: 0px 35px;
+	}
+}
