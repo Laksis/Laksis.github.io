@@ -166,23 +166,19 @@ nav a {
 nav a:hover {
 	color: #000;
 	background-color: #fff;
-	border-radius: 10px;
 }
 
 
 @media screen and (min-width:768px){
 	nav ul{
 		display: flex;
-		justify-content: center;
 	}
 
 	nav li{
 		background-color:#1d1e22;
 		margin: 0px;
 		line-height: 0em;
-		border-radius: 0px;
 		padding: 0 20px 0 20px;
-
 	}
 
 	.sakums {
@@ -191,7 +187,6 @@ nav a:hover {
 
 	nav a {
 	text-decoration: none;
-	display: block;
 	color: #d4d4dc;
 	font-size: 20px;
 	padding-top: 10px;
@@ -200,7 +195,6 @@ nav a:hover {
 
 	nav a:hover {
 		background-color:#1d1e22;
-		border-radius: 0px;
 		color: #feda6a;
 	}
 	
@@ -208,10 +202,6 @@ nav a:hover {
 	.container-1 {
 		display: flex;
 		justify-content: flex-start;
-	}
-
-	nav li {
-		margin: 0;
 	}
 
 }
@@ -228,14 +218,29 @@ video {
   		border-radius: 3px;
 	}
 
-section{
-	padding: 0;
+#web {
+	display: none;
 }
 
-source {
-	display: inline-block;
-	min-height: 300px;
+#mobile{
+	display: flex;
 }
+
+
+
+
+@media screen and (min-width: 415px){
+
+#web {
+ display: flex;
+}
+
+#mobile {
+	display: none;
+}
+
+}
+
 
 /******************************Par mums ! Apraksts par mūsu uzņēmumu*********************/
 
