@@ -304,6 +304,7 @@ video {
 .box{
  flex: 1;
  text-align: center;
+ margin: 0px 0 0 0;
 }
 
 .box img {
