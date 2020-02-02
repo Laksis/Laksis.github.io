@@ -211,11 +211,12 @@ nav a:hover {
 video {
 		display: flex;
 		flex-wrap: wrap;
-		justify-content: space-around;
-		margin: 0 auto;
+		justify-content: space-between;
+		margin: auto;
   		width: 100%;
   		height: auto;
-  		border-radius: 3px;
+  		margin-left: 1px;
+  		margin-right: 1px;
 	}
 
 #web {
@@ -230,6 +231,16 @@ video {
 
 
 @media screen and (min-width: 415px){
+
+	video{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		margin: 0 auto;
+  		width: 100%;
+  		height: auto;
+  		border-radius: 3px;
+	}
 
 #web {
  display: flex;
