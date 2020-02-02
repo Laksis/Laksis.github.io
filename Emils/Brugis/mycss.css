@@ -301,9 +301,6 @@ video {
 	padding: 3px;
 }
 
-.container img {
-	width: 70%;
-}
 
 .box{
  flex: 1;
@@ -312,22 +309,11 @@ video {
 }
 
 .box img {
-	border-radius: 50%;
-	border: 3px solid #fff;
+	border: 2px solid rgba(122, 125, 144, 0.15);
 }
 
-@media screen and (min-width: 468px){
-
-	.container img {
-	width: 50%;
-	}
-}
 
 @media (min-width: 768px){
-
-	.container img {
-	width: auto;
-}
 	.pakalpojumi-1 {
 	padding-top: 0px;
 	width: 100%;
