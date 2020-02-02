@@ -307,8 +307,8 @@ video {
 }
 
 .box img {
-	border-radius: 8px;
-	padding: 5px;
+	border-radius: 50%;
+	border: 3px solid #fff;
 }
 
 @media (min-width: 768px){
