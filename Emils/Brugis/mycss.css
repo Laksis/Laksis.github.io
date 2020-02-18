@@ -85,6 +85,10 @@ header h1{
 	width: 100%;
 }
 
+.logo img {
+width: 120%;
+}
+
 header h2{
 	color: #d4d4dc;
 }
