@@ -259,6 +259,10 @@ video {
 	display: none;
 }
 
+#mailto {
+	display: flex;
+}
+
 }
 
 
