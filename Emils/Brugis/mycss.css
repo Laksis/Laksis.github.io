@@ -103,6 +103,10 @@ header h2{
 }
 
 
+#mailto {
+	display: none;
+}
+
 @media screen and (min-width:768px){
 	header{
 	display: flex;
@@ -123,6 +127,11 @@ header h2{
 	.container-social{
 	margin:0;
 }
+
+#mailto {
+	display: flex;
+}
+
 }
 
 
