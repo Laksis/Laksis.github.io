@@ -1,8 +1,16 @@
 /****************** Globālas lietas *******************/
 
+/**************
+
+#1d1e22 - tumšss kā bija bg
+align-items: center;
+
+************/
+
+
 body {
-	background-color: #1d1e22;
-	color: #d4d4dc;
+	background-color: #fff;
+	color: #1d1e22;
 	font-family: 'Roboto', sans-serif;
 	font-size: 16px;
 	line-height: 1.6em;
@@ -10,11 +18,16 @@ body {
 	width: 100%;
 }
 
+h1 {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
 
 @media screen and (min-width:768px){
 	body{
-	background-color: #1d1e22;
-	color: #d4d4dc;
+	background-color: #fff;
+	color: #1d1e22;
 	font-family: 'Roboto', sans-serif;
 	font-size: 18px;
 	line-height: 1.6em;
@@ -42,7 +55,7 @@ header {
 	margin: 0 auto;
 	width: 100%;
 	padding: 0px;
-	align-items: center;
+	border-bottom: 0px solid #6a6d7c;
 }
 
  header ul{
@@ -52,25 +65,29 @@ header {
 }
 
 nav a{
-	color: #d4d4dc;
+	color: #1d1e22;
 	font-size: 18px;
 }
 
 header h2{
 	font-size: 21px;
-	color: #d4d4dc;
+	color: #6a6d7c;
 }
 
 .logo {
-	margin: 0 auto;
-	background-color: #1d1e22;
-	width: 100%;
+	margin: 0 0 0 30px;
+	background-color: #fff;
 	padding-top: 10px;
+}
+
+.logo img{
+	width: 80%;
 }
 
 
 .container-social{
 	margin: 0 auto;
+	display: none;
 }
 
 
@@ -83,30 +100,32 @@ header h2{
 }
 
 
-#mailto {
-	display: none;
-}
-
 @media screen and (min-width:768px){
 	header{
 	display: flex;
 	justify-content: space-between;
 	padding-top: 10px;
+	border-bottom: 1px solid #6a6d7c;
+	align-items: flex-end;
 	}
 
 	nav a{
-	color: #d4d4dc;
+	color: #1d1e22;
 	font-size: 20px;
 }
 
 	.logo {
 	margin: 0;
-	background-color: #1d1e22;
+	background-color: #fff;
 	width: auto;
 }
 
+.logo img{
+	width: 100%;
+}
 	.container-social{
 	margin:0;
+	display: flex;
 }
 
 	#mailto {
@@ -121,21 +140,26 @@ header h2{
 
 
 .fab {
-	color:#fff;
+	color:#6a6d7c;
 }
 
  .far {
-   color:#fff;
+   color:#6a6d7c;
 }
 
 .fas {
-	color:#fff;
+	color:#6a6d7c;
 }
 
 
 
 
 /* ******************* Navigācija ********************/
+nav {
+	margin-bottom: 2px;
+	padding-top: 0;
+	border-bottom: 1px solid #6a6d7c;
+}
 
 nav ul{
 	display: flex;
@@ -147,14 +171,13 @@ nav ul{
 nav ul li{
 	list-style: none;
 	position: relative;
-	padding: 10px 0;
+	padding: 5px 0;
 	transition: 0.5s;
 	box-sizing: border-box;
-	border-right: 0px solid rgba(255,255,255,.2)
 }
 
 nav ul li a:hover{
-	color: #feda6a;
+	color: #6a6d7c;
 }
 
 nav ul li:last-child{
@@ -164,16 +187,16 @@ nav ul li:last-child{
 nav ul li a {
 	text-decoration: none;
 	padding: 0 20px;
-	color: #d4d4dc;
+	color: #1d1e22;
 }
 
 /*****************Sub navigācija *************/
 
 nav ul li ul {
 	position: absolute;
-	top: 45px;
+	top: 40px;
 	left: 0;
-	background-color: #1d1e22;
+	background-color: #fff;
 	display: block;
 	width: 200px;
 	transition: 0.5s;
@@ -189,14 +212,20 @@ nav ul li:hover ul{
 
 nav ul li ul li {
 	border-right: none;
-	border-bottom: 1px solid rgba(255,255,255,.2)
+	border-bottom: 1px solid #6a6d7c;
 }
 
-.firstsub{
-	border-top: 0px solid rgba(255,255,255,.2)
+@media screen and (max-width: 768px){
+
+	nav {
+	margin-bottom: 0px;
+	border-bottom: 0px solid #6a6d7c;
 }
 
-@media (max-width: 768px){
+	.firstsub{
+	border-top: 1px solid #6a6d7c;
+	}
+
 	nav ul{
 		display: block;
 		text-align: center;
@@ -205,8 +234,7 @@ nav ul li ul li {
 	nav ul li {
 		display: block;
 		padding: 5px 0;
-		border-bottom: 1px solid rgba(255,255,255,.2)
-
+		border-bottom: 1px solid #6a6d7c;
 	}
 
 	nav ul li ul{
@@ -215,9 +243,7 @@ nav ul li ul li {
 		z-index: 1;
 	}
 
-	.firstsub{
-	border-top: 1px solid rgba(255,255,255,.2)
-	}
+	
 }
 
 
@@ -287,6 +313,13 @@ video {
 	text-align: center;
 	background-color: rgba(122, 125, 144, 0.15);
 	padding: 3px;
+	font-weight: 200;
+}
+
+.parmums p {
+	width: 100%;
+	text-align: center;
+	margin: auto;
 }
 
 
@@ -297,6 +330,12 @@ video {
 	padding: 5px;
 }
 
+.parmums p {
+	width: 100%;
+	text-align: left;
+	margin: auto;
+}
+
 .parmums-1{
 	width: 100%;
 }
@@ -305,6 +344,14 @@ video {
 
 
 /* ************************* Pakalpojumu kastes ************ */
+
+.box a{
+	color: #1d1e22;
+}
+
+.box a:hover{
+	color: #6a6d7c;
+}
 
 .container p{
 	width: 80%;
@@ -321,6 +368,7 @@ video {
 	text-align: center;
 	background-color: rgba(122, 125, 144, 0.15);
 	padding: 3px;
+	font-weight: 200;
 }
 
 
@@ -330,9 +378,26 @@ video {
  margin: 10px 0 0 0;
 }
 
+.box h1 {
+
+	text-align: center;
+	background-color: rgba(122, 125, 144, 0.15);
+	padding: 5px;
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 10px;
+	margin-top: 5px;
+	font-weight: 200;
+}
+
+
 .box img {
 	border: 3px solid rgba(122, 125, 144, 0.15);
 	opacity: 0.9;
+}
+
+.pakalpojumi a {
+	text-decoration: none;
 }
 
 
