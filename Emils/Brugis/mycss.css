@@ -1,10 +1,8 @@
 /****************** Globālas lietas *******************/
 
 /**************
-
 #1d1e22 - tumšss kā bija bg
 align-items: center;
-
 ************/
 
 
@@ -480,14 +478,14 @@ footer p {
 
 #showcase .bg-image{
 	position: absolute;
-	background: #333 url('bildes/showcase/showcase2.jpg') ;
+	background: #333 url('bildes/showcase/showcase.jpg') ;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	width: 80%;
 	height: 300px;
 	z-index: -1;
-	opacity: 0.2;
+	opacity: 0.8;
 }
 
 #showcase h1 {
@@ -499,6 +497,6 @@ footer p {
 }
 
 #showcase .content-wrap {
-	padding: 4em 1.5em;
+	padding: 4em 1.5em 0 4em;
 
 }
