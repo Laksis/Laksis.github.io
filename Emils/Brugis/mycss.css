@@ -452,3 +452,53 @@ footer p {
 	padding: 10px;
 	}
 }
+
+/********** Brugesanas lapa **********/
+
+
+.btn {
+	display: inline-block;
+	background:#1d1e22;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em 1em;
+	border:#666;
+	margin: 2em 0;
+	border-radius: 3px;
+}
+
+.btn:hover{
+	background: #6a6d7c;
+	text-align: center;
+}
+
+#showcase{
+	min-height: 300px;
+	color: #1d1e22;
+	text-align: center;
+}
+
+#showcase .bg-image{
+	position: absolute;
+	background: #333 url('bildes/showcase/showcase2.jpg') ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 80%;
+	height: 300px;
+	z-index: -1;
+	opacity: 0.2;
+}
+
+#showcase h1 {
+	padding-bottom: 0px;
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+#showcase .content-wrap {
+	padding: 4em 1.5em;
+
+}
