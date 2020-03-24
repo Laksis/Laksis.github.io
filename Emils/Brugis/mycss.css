@@ -312,6 +312,7 @@ video {
 	background-color: rgba(122, 125, 144, 0.15);
 	padding: 3px;
 	font-weight: 200;
+	text-transform: uppercase;
 }
 
 .parmums p {
@@ -453,6 +454,10 @@ footer p {
 
 /********** Brugesanas lapa **********/
 
+#section-b {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
 
 .btn {
 	display: inline-block;
@@ -470,8 +475,9 @@ footer p {
 	text-align: center;
 }
 
-#showcase{
-	min-height: 300px;
+#showcase,
+ #showcase1{
+	min-height: 250px;
 	color: #1d1e22;
 	text-align: center;
 }
@@ -482,21 +488,79 @@ footer p {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	width: 80%;
-	height: 300px;
+	width: 100%;
+	height: 250px;
 	z-index: -1;
 	opacity: 0.8;
 }
 
-#showcase h1 {
-	padding-bottom: 0px;
-	font-size: 35px;
+#showcase h1,
+ #showcase1 h1 {
+	font-size: 25px;
 	text-transform: uppercase;
 	line-height: 1.5em;
 	margin: 0;
 }
 
-#showcase .content-wrap {
-	padding: 4em 1.5em 0 4em;
+#showcase .content-wrap,
+#showcase1 .content-wrap {
+	padding: 4em 1.5em 1em 1.5em;
+}
 
+#showcase1 .bg-image{
+	position: absolute;
+	background: #333 url('bildes/showcase/showcase3.jpg') ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	z-index: -1;
+	opacity: 0.8;
+	margin-top: 20px;
+}
+
+
+@media (min-width: 768px){
+#showcase .bg-image,
+ #showcase1 .bg-image{
+height: 300px;
+width: 80%;
+}
+
+#showcase h1,
+ #showcase1 h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+#showcase .content-wrap,
+#showcase1 .content-wrap {
+	padding: 4em 1.5em 1em 1.5em;
+}
+#showcase,
+ #showcase1{
+	min-height: 300px;
+	color: #1d1e22;
+	text-align: center;
+}
+}
+
+table {
+    width: 80%;
+    margin: auto;
+}
+
+table, th, td {
+    border: 1px solid #333;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 5px 20px;
+}
+
+.bezpvn {
+	border-style: none;
 }
