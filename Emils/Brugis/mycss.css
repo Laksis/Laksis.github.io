@@ -374,7 +374,6 @@ video {
 .box{
  flex: 1;
  text-align: center;
- margin: 10px 0 0 0;
 }
 
 .box h1 {
@@ -454,7 +453,8 @@ footer p {
 
 /********** Brugesanas lapa **********/
 
-#section-b {
+#section-b,
+ #section-c {
 	margin-bottom: 20px;
 	margin-top: 40px;
 }
@@ -481,7 +481,8 @@ footer p {
 	text-align: center;
 }
 
-#showcase1{
+#showcase1,
+ #showcase2{
 	min-height: 250px;
 	color: #ffffff;
 	text-align: center;
@@ -496,11 +497,11 @@ footer p {
 	width: 100%;
 	height: 250px;
 	z-index: -1;
-	opacity: 0.8;
+	opacity: 0.4;
 }
 
 #showcase h1,
- #showcase1 h1
+ #showcase1 h1,
   #showcase2 h1 {
 	font-size: 25px;
 	text-transform: uppercase;
@@ -528,16 +529,34 @@ footer p {
 }
 
 
+#showcase2 .bg-image{
+	position: absolute;
+	background: #ffffff url('bildes/showcase/showcase4.jpg') ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	z-index: -1;
+	opacity: 0.8;
+	margin-top: 20px;
+}
+
+.box ol{
+	text-align: left;
+	padding: 0em 2em 1em 6em;
+}
+
 @media (min-width: 768px){
 #showcase .bg-image,
- #showcase1 .bg-image
-  #showcase2 .bg-iage{
+ #showcase1 .bg-image,
+  #showcase2 .bg-image{
 height: 300px;
 width: 80%;
 }
 
 #showcase h1,
- #showcase1 h1
+ #showcase1 h1,
   #showcase2 h1 {
 	font-size: 35px;
 	text-transform: uppercase;
@@ -545,16 +564,27 @@ width: 80%;
 	margin: 0;
 }
 #showcase .content-wrap,
-#showcase1 .content-wrap
- #showcase2 .content-wrap{
+ #showcase1 .content-wrap,
+  #showcase2 .content-wrap{
 	padding: 4em 1.5em 1em 1.5em;
 }
 #showcase,
- #showcase1
+ #showcase1,
   #showcase2{
 	min-height: 300px;
 	text-align: center;
 }
+
+.box ol{
+	text-align: left;
+	padding: 0em 2em 1em 3.5em;
+}
+
+.box .content-wrap{
+	padding: 0em 2em 1em 3.5em;
+
+}
+
 }
 
 table {
@@ -571,5 +601,3 @@ th, td {
     padding: 5px 20px;
 }
 
-
-#showcase2
