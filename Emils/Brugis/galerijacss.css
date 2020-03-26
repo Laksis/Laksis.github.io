@@ -1,0 +1,346 @@
+body {
+	background-color: #fff;
+	color: #1d1e22;
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 100%;
+}
+
+h1 {
+	font-size: 20px;
+	letter-spacing: 1px;
+}
+
+
+@media screen and (min-width:768px){
+	body{
+	background-color: #fff;
+	color: #1d1e22;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 80%;
+	}
+}
+
+
+ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/************************ Header lapas augšpuse logo un socialie tīkli ************/
+
+header {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+	width: 100%;
+	padding: 0px;
+	border-bottom: 0px solid #6a6d7c;
+}
+
+ header ul{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+nav a{
+	color: #1d1e22;
+	font-size: 18px;
+}
+
+header h2{
+	font-size: 21px;
+	color: #6a6d7c;
+}
+
+.logo {
+	margin: 0 0 0 30px;
+	background-color: #fff;
+	padding-top: 10px;
+}
+
+.logo img{
+	width: 80%;
+}
+
+
+.container-social{
+	margin: 0 auto;
+	display: none;
+}
+
+
+.container-social ul{
+	margin: 0;
+}
+
+.container-social li {
+	padding: 0 8px;
+}
+
+
+@media screen and (min-width:768px){
+	header{
+	display: flex;
+	justify-content: space-between;
+	padding-top: 10px;
+	border-bottom: 1px solid #6a6d7c;
+	align-items: flex-end;
+	}
+
+	nav a{
+	color: #1d1e22;
+	font-size: 20px;
+}
+
+	.logo {
+	margin: 0;
+	background-color: #fff;
+	width: auto;
+}
+
+.logo img{
+	width: 100%;
+}
+	.container-social{
+	margin:0;
+	display: flex;
+}
+
+	#mailto {
+	display: flex;
+}
+
+}
+
+
+/************ Soc ikonas header *****************************/
+
+
+
+.fab {
+	color:#6a6d7c;
+}
+
+ .far {
+   color:#6a6d7c;
+}
+
+.fas {
+	color:#6a6d7c;
+}
+
+
+
+
+/* ******************* Navigācija ********************/
+nav {
+	margin-bottom: 2px;
+	padding-top: 0;
+	border-bottom: 1px solid #6a6d7c;
+}
+
+nav ul{
+	display: flex;
+	justify-content: flex-start;
+	margin: 0 auto;
+	padding: 0;
+}
+
+nav ul li{
+	list-style: none;
+	position: relative;
+	padding: 5px 0;
+	transition: 0.5s;
+	box-sizing: border-box;
+}
+
+nav ul li a:hover{
+	color: #6a6d7c;
+}
+
+nav ul li:last-child{
+	border-right: none;
+}
+
+nav ul li a {
+	text-decoration: none;
+	padding: 0 20px;
+	color: #1d1e22;
+}
+
+/*****************Sub navigācija *************/
+
+nav ul li ul {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background-color: #fff;
+	display: block;
+	width: 200px;
+	transition: 0.5s;
+	opacity: 0;
+	visibility: hidden;
+	z-index: 1;
+}
+
+nav ul li:hover ul{
+	opacity: 1;
+	visibility: visible;
+}
+
+nav ul li ul li {
+	border-right: none;
+	border-bottom: 1px solid #6a6d7c;
+}
+
+@media screen and (max-width: 768px){
+
+	nav {
+	margin-bottom: 0px;
+	border-bottom: 0px solid #6a6d7c;
+}
+
+	.firstsub{
+	border-top: 1px solid #6a6d7c;
+	}
+
+	nav ul{
+		display: block;
+		text-align: center;
+	}
+
+	nav ul li {
+		display: block;
+		padding: 5px 0;
+		border-bottom: 1px solid #6a6d7c;
+	}
+
+	nav ul li ul{
+		width: 100%;
+		top: 35px;
+		z-index: 1;
+	}
+
+	
+}
+
+/*********** Footer , lapas pēda ***************/
+
+footer {
+	border-top: 1px solid #d4d4dc;
+	margin-top: 30px;
+}
+
+footer p {
+	text-align: center;
+	margin: 10px;
+	padding: 8px;
+}
+
+@media screen and (min-width:768px){
+	footer{
+	border-top: 1px solid #d4d4dc;
+	margin-top: 50px;
+	}
+
+	footer p {
+	text-align: center;
+	margin: 15px;
+	padding: 10px;
+	}
+}
+
+/********** Brugesanas lapa **********/
+
+#section-a {
+	margin-bottom: 20px;
+	margin-top: 40px;
+}
+
+.btn {
+	display: inline-block;
+	background:#1d1e22;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em 1em;
+	border:#666;
+	margin: 2em 0;
+	border-radius: 3px;
+}
+
+.btn:hover{
+	background: #6a6d7c;
+	text-align: center;
+}
+
+#showcase{
+	min-height: 250px;
+	color: #1d1e22;
+	text-align: center;
+}
+
+#showcase{
+	min-height: 250px;
+	color: #333;
+	text-align: center;
+}
+
+#showcase .bg-image{
+	position: absolute;
+	background: #ffffff url('bildes/showcase/showcase4.jpg') ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	z-index: -1;
+	opacity: 0.4;
+}
+
+#showcase h1 {
+	font-size: 25px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+
+#showcase .content-wrap {
+	padding: 4em 1.5em 1em 1.5em;
+}
+
+.box ol{
+	text-align: left;
+	padding: 0em 2em 1em 6em;
+}
+
+@media (min-width: 768px){
+#showcase .bg-image{
+height: 300px;
+width: 80%;
+}
+
+#showcase h1{
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+#showcase .content-wrap{
+	padding: 4em 1.5em 1em 1.5em;
+}
+#showcase{
+	min-height: 300px;
+	text-align: center;
+}
