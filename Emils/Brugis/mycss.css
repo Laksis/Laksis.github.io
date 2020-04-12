@@ -116,7 +116,7 @@ header h2{
 	width: auto;
 }
 
-.logo img{
+	.logo img{
 	width: 100%;
 }
 	.container-social{
@@ -192,7 +192,7 @@ nav ul li ul {
 	position: absolute;
 	top: 40px;
 	left: 0;
-	background-color: #fff;
+	background-color: #fff5d7;
 	display: block;
 	width: 200px;
 	transition: 0.5s;
