@@ -69,7 +69,7 @@ nav a{
 
 header h2{
 	font-size: 21px;
-	color: #6a6d7c;
+	color: #2f1728;
 }
 
 .logo {
@@ -136,15 +136,15 @@ header h2{
 
 
 .fab {
-	color:#6a6d7c;
+	color: #2f1728;
 }
 
  .far {
-   color:#6a6d7c;
+   color:#2f1728;
 }
 
 .fas {
-	color:#6a6d7c;
+	color:#2f1728;
 }
 
 
@@ -173,7 +173,7 @@ nav ul li{
 }
 
 nav ul li a:hover{
-	color: #6a6d7c;
+	color: #82737E;
 }
 
 nav ul li:last-child{
