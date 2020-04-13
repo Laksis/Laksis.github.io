@@ -1,3 +1,11 @@
+/****************** Globālas lietas *******************/
+
+/**************
+#1d1e22 - tumšss kā bija bg
+align-items: center;
+************/
+
+
 body {
 	background-color: #fff5d7;
 	color: #1d1e22;
@@ -726,12 +734,7 @@ width: 80%;
 }
 
 }
-}
 
-
-
-
-/*********************Media querys***************/
 
 @media only screen and (min-width : 1440px) {
     body{
