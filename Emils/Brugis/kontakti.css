@@ -19,10 +19,11 @@ body {
   line-height: 30px;
 }
 
-.container {
+.container0 {
   max-width: 400px;
   width: 100%;
   margin: 0 auto;
+  padding: 0;
   position: relative;
 }
 
@@ -38,7 +39,7 @@ body {
 #contact {
   background: #F9F9F9;
   padding: 25px;
-  margin: 150px 0;
+  margin: 45px 0 0 0;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
@@ -115,9 +116,6 @@ fieldset {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
-.copyright {
-  text-align: center;
-}
 
 #contact input:focus,
 #contact textarea:focus {
@@ -139,4 +137,16 @@ fieldset {
 
 :-ms-input-placeholder {
   color: #888;
+}
+
+@media (min-width: 768px) {
+
+}
+
+@media only screen and (min-width : 1024px) {
+
+}
+
+@media only screen and (min-width : 1440px) {
+
 }
