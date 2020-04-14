@@ -17,12 +17,9 @@ body {
   line-height: 30px;
 }
 
-.container{
+.wrap {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0px;
 }
 
 .container0 {
@@ -98,29 +95,6 @@ fieldset {
   resize: none;
 }
 
-#contact button[type="submit"] {
-  cursor: pointer;
-  width: 100%;
-  border: none;
-  background: black;
-  color: #FFF;
-  margin: 0 0 5px;
-  padding: 10px;
-  font-size: 15px;
-}
-
-#contact button[type="submit"]:hover {
-  background: gray;
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
-}
-
-#contact button[type="submit"]:active {
-  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
-}
-
-
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
@@ -159,12 +133,14 @@ fieldset {
 /**************Profila kartiņa ***************/
 
 .card {
+  display: inline-block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   min-width: 280px;
   margin: 0 auto;
   font-family: arial;
   margin-top: 20px;
+  text-align: center;
 }
 
 .title {
