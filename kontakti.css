@@ -17,12 +17,9 @@ body {
   line-height: 30px;
 }
 
-.container{
+.wrap {
   display: flex;
   flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%;
-  padding: 0px;
 }
 
 .container0 {
@@ -136,12 +133,14 @@ fieldset {
 /**************Profila kartiņa ***************/
 
 .card {
+  display: inline-block;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   max-width: 300px;
   min-width: 280px;
   margin: 0 auto;
   font-family: arial;
   margin-top: 20px;
+  text-align: center;
 }
 
 .title {
