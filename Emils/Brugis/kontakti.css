@@ -30,7 +30,7 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative;
-  margin-top: 22px;
+  margin-top: 40px;
 }
 
 #contact input[type="text"],
@@ -131,14 +131,21 @@ fieldset {
   min-width: 280px;
   margin: 0 auto;
   font-family: arial;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
   background-color:   rgb(255,255,255);
+  padding: 5px;
 }
 
 .title {
   color: grey;
   font-size: 18px;
+}
+
+
+#atstarpe{
+  text-align: center;
+  margin: 0 auto;
 }
 
 a {
@@ -154,27 +161,23 @@ button:hover, a:hover {
 
 @media (min-width: 768px) {
 .wrap {
-  display: block;
+  display: flex;
   text-align: center;
-  width: 60%;
-  margin: 0 auto;
 }
 }
 
 @media only screen and (min-width : 1024px) {
 .wrap {
-  display: block;
+  display: flex;
   text-align: center;
   width: 100%;
-  margin: 0 auto;
 }
 }
 
-@media only screen and (min-width : 1440px) {
+@media only screen and (min-width : 1620px) {
 .wrap {
   display: flex;
   flex-wrap: wrap;
   width: 100%;
-  margin: 0 auto;
 }
 }
