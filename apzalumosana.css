@@ -1,0 +1,111 @@
+
+
+#showcase .bg-image{
+	position: absolute;
+	background: #ffffff url('bildes/apzalumosana/apzalumosana.jpg') ;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	height: 250px;
+	z-index: -1;
+	opacity: 0.9;
+}
+
+@media (min-width: 768px){
+#showcase .bg-image,
+ #showcase1 .bg-image,
+  #showcase2 .bg-image{
+height: 300px;
+width: 80%;
+}
+
+#showcase h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+#showcase .content-wrap {
+	padding: 4em 1.5em 1em 1.5em;
+}
+#showcase {
+	min-height: 300px;
+	text-align: center;
+}
+
+.box ol{
+	text-align: left;
+	padding: 0em 2em 1em 3.5em;
+}
+
+.box .content-wrap{
+	padding: 0em 2em 1em 3.5em;
+}
+}
+
+@media only screen and (min-width : 1024px) {
+	#showcase .bg-image {
+height: 300px;
+width: 80%;
+}
+
+#showcase h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+#showcase .content-wrap{
+	padding: 4em 1.5em 1em 1.5em;
+}
+#showcase {
+	min-height: 300px;
+	text-align: center;
+}
+.box ol{
+	text-align: left;
+	padding: 0em 2em 1em 3.5em;
+}
+.box .content-wrap{
+	padding: 0em 2em 1em 3.5em;
+}
+}
+
+@media only screen and (min-width : 1440px) {
+    body{
+	background-color: #fff5d7;
+	color: #1d1e22;
+	font-family: 'Roboto', sans-serif;
+	font-size: 18px;
+	line-height: 1.6em;
+	margin: auto;
+	width: 60%;
+	}
+
+	#showcase .bg-image {
+height: 300px;
+width: 60%;
+}
+
+#showcase h1 {
+	font-size: 35px;
+	text-transform: uppercase;
+	line-height: 1.5em;
+	margin: 0;
+}
+#showcase .content-wrap{
+	padding: 4em 1.5em 1em 1.5em;
+}
+#showcase{
+	min-height: 300px;
+	text-align: center;
+}
+.box ol{
+	text-align: left;
+	padding: 0em 2em 1em 3.5em;
+}
+.box .content-wrap{
+	padding: 0em 2em 1em 3.5em;
+}
+}
