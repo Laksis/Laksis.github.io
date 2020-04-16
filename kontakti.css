@@ -20,6 +20,8 @@ body {
 .wrap {
   display: flex;
   flex-wrap: wrap;
+  width: 90%;
+  margin: 0 auto;
 }
 
 .container0 {
@@ -28,7 +30,7 @@ body {
   margin: 0 auto;
   padding: 0;
   position: relative;
-  margin-top: 22px;
+  margin-top: 40px;
 }
 
 #contact input[type="text"],
@@ -117,17 +119,7 @@ fieldset {
   color: #888;
 }
 
-@media (min-width: 768px) {
 
-}
-
-@media only screen and (min-width : 1024px) {
-
-}
-
-@media only screen and (min-width : 1440px) {
-
-}
 
 
 /**************Profila kartiņa ***************/
@@ -139,8 +131,10 @@ fieldset {
   min-width: 280px;
   margin: 0 auto;
   font-family: arial;
-  margin-top: 20px;
+  margin-top: 40px;
   text-align: center;
+  background-color:   rgb(255,255,255);
+  padding: 5px;
 }
 
 .title {
@@ -148,17 +142,10 @@ fieldset {
   font-size: 18px;
 }
 
-button {
-  border: none;
-  outline: 0;
-  display: inline-block;
-  padding: 8px;
-  color: white;
-  background-color: #000;
+
+#atstarpe{
   text-align: center;
-  cursor: pointer;
-  width: 100%;
-  font-size: 18px;
+  margin: 0 auto;
 }
 
 a {
@@ -169,4 +156,28 @@ a {
 
 button:hover, a:hover {
   opacity: 0.7;
+}
+
+
+@media (min-width: 768px) {
+.wrap {
+  display: flex;
+  text-align: center;
+}
+}
+
+@media only screen and (min-width : 1024px) {
+.wrap {
+  display: flex;
+  text-align: center;
+  width: 100%;
+}
+}
+
+@media only screen and (min-width : 1620px) {
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
 }

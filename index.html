@@ -1,148 +1,114 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="wiewport" content="width=device-width">
-    <meta name="description" content="Profesionāls bruģa ikelāšanas, labiekārtošanas, apzaļumosanas, žoga montāžas uznēmums. ">
-    <meta name="keywords" content="bruģis,ieklāšana, labiekārtošana,apzaļumošana, betons,koks, gumija,klucis, ķieģelis,ceļš, apmales, kalts, granīts">
-    <title>Bruģakmens ieklāšana</title>
-    <link rel="stylesheet" type="text/css" href="./style.css">
-  </head>
-  <body>
+<html>
+<head>
+	<link rel="icon" type="image/x-icon" href="bildes/favicon/icon.ico" />
+	<title>Brugē ceļu</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="mycss.css">
+	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
-<!-- Heder -->
+</head>
+<body>
+
+
+
+<div>
+
+
+<!----------------Lapas galva, logo , kontakti , sociālie tīkli -------->
 <header>
-  <div class="conteiner">
-              <div id="branding">
-                <h1>PAVING SIA</h1>
-              </div>
-                    <div class="kontaktujosla">
-                      <a href="https://www.facebook.com/" target="_blank"><h1>Facebook</h1></a>
-                    </div>
+		<ul class="logo">
+			<li><img src="bildes/logo/logo12.png"></li>
+		</ul>
 
-                    <div class="ikonujosla">
-                      <img class="ikona" src="bildes/valodas/face.png" alt="">
-                    </div>
+		<ul class="container-social">
 
-                    <div class="kontaktujosla">
-                      <a href="mailto:paving@paving.com?subject=feedback"><h1>Raksti</h1></a>
-                    </div>
+			<li><h2><i class="fas fa-phone-alt"></i> 25168126</h2></li>
 
-                    <div class="ikonujosla">
-                      <img class="ikona" src="bildes/valodas/epasts.png" alt="">
-                    </div>
+			<li><a href="mailto:paving@paving.com?subject=feedback"><h2><i class="far fa-envelope"></i> Raksti</h2></a></li>
 
-                    <div class="kontaktujosla">
-                      <h1>+371 6027694</h1>
-                    </div>
-
-                    <div class="ikonujosla">
-                      <img class="ikona" src="bildes/valodas/tel.png" alt="">
-                    </div>
-            <nav>
-              <ul>
-
-
-                    <li><a href="#">SĀKUMS</a></li>
-                    <li><a href="#">PAKALPOJUMI</a></li>
-                    <li><a href="#">GALERIJA</a></li>
-                    <li><a href="#">KONTAKTI</a></li>
-
-                    <div id="valodas">
-                        <a href="#"> <img src="bildes/valodas/lv1.jpg" alt=""> </a>
-                        <a href="#"> <img src="bildes/valodas/ru1.jpg" alt=""> </a>
-                        <a href="#"> <img src="bildes/valodas/se1.jpg" alt=""> </a>
-                    </div>
-              </ul>
-            </nav>
- </div>
+			<li><a href="https://www.facebook.com/J%C5%ABsu-m%C4%81jas-pagalms-102960617819681/?modal=admin_todo_tour"  target="_blank"><h2><i class="fab fa-facebook-square"></i> Facebook</h2></a></li>
+		</ul>
+	</div>
 </header>
 
 
-<!-- Cover -->
-<section id="cover">
-        <video autoplay loop muted playsinline poster="../web/cover/cover.jpg" >
+<!-------------- Navigācija--------------->
+
+
+	
+<nav>
+		<ul>
+			<li class="firstsub"><a href="index.html">SĀKUMS</a></li>
+            <li><a href="#">PAKALPOJUMI</a>
+            <ul class="subdown">
+            	<li class="firstsub"><a href="brugesana.html">BRUĢĒŠANA</a></li>
+            	<li><a href="nozogojumi.html">NOŽOGOJUMI</a></li>
+            	<li><a href="apzalumosana.html">APZAĻUMOŠANA</a></li>
+            </ul>
+            </li>
+            <li><a href="galerija.html">GALERIJA</a></li>
+            <li><a href="kontakti.html">KONTAKTI</a></li>
+		</ul>
+	</nav>
+
+
+
+
+<!-------------- Cover , video baneris--------------->
+
+
+<section>
+        <video id="web" autoplay loop muted playsinline >
         <source src="cover/cover.mp4" type="video/mp4">
+        </video>
+
+        <video id="mobile" autoplay loop muted playsinline >
+        <source src="cover/cover_mobile.mp4" type="video/mp4">
         </video>
 </section>
 
-<section class="conteiner" id="padomi">
-  <ul>
-    <div class="centrs">
-      <li> <h1>PAR MUMS</h1> </li>
-    </div>
 
-    <strong> <li> <p>Mūsu bruģēšanas prasmes sākušās Latvijā, privātmāju teritorijas labiekārtošanā. Turpmāk zināšanas bruģa ieklāšanā
-      pilnveidotas starptautiskā līmenī Skandināvijā, četru gadu garumā, sadarbojoties ar labi atpazīstamiem ceļu segumu un zemes
-      darbu uzņēmumiem JVAB AB, TME AB. Mēs izveidosim digitālu skici, uzņemsimies atbildību par
-       vissambiciozākajiem darbiem Jūsu privātās teritorijas labiekārtošanā.</p> </li> </strong>
-  </ul>
+<!-------------------Par mums ! Apraksts par mūsu uzņēmumu ------------->
+<section class="parmums">
+	<div class="parmums-1">
+		<h1>PAR MUMS</h1>
+	    <p>Mūsu bruģēšanas prasmes sākušās Latvijā, privātmāju teritorijas labiekārtošanā. Turpmāk zināšanas bruģa ieklāšanā
+	    pilnveidotas starptautiskā līmenī Skandināvijā, četru gadu garumā, sadarbojoties ar labi atpazīstamiem ceļu segumu un zemes darbu uzņēmumiem JVAB AB, TME AB, R&R Markentreprenad Aktiebolag. Mēs izveidosim digitālu skici, uzņemsimies atbildību par visambiciozākajiem darbiem, jūsu privātās teritorijas labiekārtošanā.</p>
+	</div>
 </section>
 
-<!--
-<section class="conteiner" id="padomi">
-  <strong>
-  <ul>
-    <li><h1>10 speciālistu ieteikumi par bruģēšanu pirms projekta uzsākšanas</h1></li>
-    <li><h2>Pirms sākat bruģēšanu, ir jāapsver dažas lietas, lai sasniegtu vēlamo rezultātu.</h2></li>
-    <li> <p>1. Izveidojiet vienkāršu skici un plānu tam, ko vēlaties paveikt. </p> </li>
-    <li> <p>2. Padomājiet par to, vai jums vajadzētu veikt šo darbu pats vai nolīgt darbuzņēmēju. Lasīt vairāk</p> </li>
-    <li> <p>3. Izvēlieties akmens veidu, kuru vēlaties izmantot. Lasīt vairāk </p> </li>
-    <li> <p>4. Pasūtiet akmeni LABĀ LAIKĀ piegādes laikā. </p> </li>
-    <li> <p>5. Vai jums ir nepieciešams izrakt augsni, iznomāt ekskavatoru un jebkuru konteineru.</p> </li>
-    <li> <p>6. Pasūtīt grants.</p> </li>
-    <li> <p>7. Iegūstiet citus nepieciešamos materiālus, piemēram, nesēju, komplektu un javas smiltis un audumu.</p> </li>
-    <li> <p>8. Pārbaudiet instrumentu kasti, dažreiz ir nepieciešami īpaši instrumenti, piemēram, zemes vibrators vai akmens griezējs, ko var īrēt.</p> </li>
-    <li> <p>9.Pārbaudiet brošūras, rokasgrāmatas un instrukcijas par pareizu lietošanu.</p> </li>
-    <li> <p>10. Pirms darba sākšanas pārbaudiet piegādes kvalitāti un apjomu.</p> </li>
-  </ul>
-</strong>
-  <p></p>
-  <p></p>
-  <p></p>
-</section>
--->
+<!------------------Pakalpojumu kastes, bilde ar pakalpojumu un mūsu ieteikumiem--------------->
 
-<!-- Sekcija kastes -->
-<section id="boxes">
-  <div class="conteiner">
+<section class="pakalpojumi">
+	<div class="pakalpojumi-1">
+	<h1>PAKALPOJUMI</h1>
+	</div>
+	<div class="container">
+		<div class="box">
+			<img src="bildes/pakalpojumi/ieklasana.jpg">
+			<a href="brugesana.html"><h1>BRUĢĒŠĀŅĀ</h1></a>
+			<p>Pirms sākat bruģēšanu, ir jāapsver dažas lietas, lai sasniegtu vēlamo rezultātu. Mani ieteikumi par bruģēšanu, pirms projekta uzsākšanas.</p>
+		</div>
 
-      <div class="box">
-        <img src="bildes/pakalpojumi/ieklasana.jpg" alt="">
-        <h1>Bruģēšana</h1>
-        <p>Mūsu bruģēšanas prasmes sākušās Latvijā,
-privātmāju teritorijas labiekārtošanā.
-Turpmāk zināšanas bruģa ieklāšanā
-pilnveidotas starptautiskā līmenī Skandināvijā, četru gadu garumā, sadarbojoties ar labi
-atpazīstamiem ceļu segumu un zemes darbu uzņēmumiem JVAB AB, TME AB.
-Izveidosim digitālu skici, uzņemsimies atbildību par vissambiciozākajiem darbiem
-Jūsu privātās teritorijas labiekārtošanā.
-        </p>
-      </div>
+		<div class="box">
+			<img src="bildes/pakalpojumi/seta.jpg">
+			<a href="nozogojumi.html"><h1>SĒTAS MONTĀŽA</h1></a>
+			<p>Skaista un funkcionāla sēta ir katra mājas saimnieka vizītkarte. Ko vajadzētu zināt par žoga un vārtu nomaiņu vai uzstādīšanu.</p>
+		</div>
 
-      <div class="box">
-        <img src="bildes/pakalpojumi/seta.jpg" alt="">
-        <h1>Sētas montāža</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-
-      <div class="box">
-        <img src="bildes/pakalpojumi/apzalumosana.jpg" alt="">
-        <h1>Labiekārtošana</h1>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
-           incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-           quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-        </p>
-      </div>
-
-   </div>
+		<div class="box">
+			<img src="bildes/pakalpojumi/apzalumosana.jpg">
+			<a href="apzalumosana.html"><h1>APZAĻUMOŠANA</h1></a>
+			<p>Jūsu pagalms, neatkarīgi no tā lieluma, veido kopējo mājas pievilcību kā arī patīkamu vietu atpūtai. Daži padomi pievilcīga pagalma izveidošanai.</p>
+		</div>
+	</div>
 </section>
 
-<footer><p>www.brugesana.lv Copyright &copy; 2019</p></footer>
+	<script type="text/javascript" src="script.js"></script>
 
+<footer><p>www.pavingsia.lv Copyright &copy; 2020</p></footer>
 
-  </body>
+</body>
 </html>
