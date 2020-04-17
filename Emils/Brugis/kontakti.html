@@ -9,13 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="kontakti.css">
 	<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+	<link rel="stylesheet" href="libs/v6.3.1-dis/ol.css">
 </head>
 <body>
-
-<div>
-
-
 <!----------------Lapas galva, logo , kontakti , sociālie tīkli -------->
 <header>
 		<ul class="logo">
@@ -51,23 +47,27 @@
             <li><a href="kontakti.html">KONTAKTI</a></li>
 		</ul>
 	</nav>
-<!-------------- Google maps--------------->
-
-
-
-
 
 <!-------------- Uzņemuma rekvizīti--------------->
 
 	<div class="parmums-1">
 		<h1>Uzņēmuma rekvizīti.</h1>
 		</div>
+
+		<div class="karte">
+			<!-------------- Google maps--------------->
+ <div id="js-map" class="map">
+
+ </div>
+		</div>
+
+
 <div class="rekviziti">
-	 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d70199.80767413779!2d23.641561371688574!3d56.644267580693324!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46ef254b6eed168f%3A0x400cfcd68f31c60!2sJelgava!5e0!3m2!1slv!2slv!4v1587153949260!5m2!1slv!2slv"></iframe>
 		<p>Uzņēmuma nosaukums: SIA "TONS" <br>
 			Reģ. numurs: 41702001894 <br>
 			PVN numurs: LV41702001894 <br>
 			Jur. adrese: "Mežotņi", Svētes pag., Jelgavas nov., LV-3008 <br>
+			Faktiskās darbības vietas: Rīga, Rīgas raj., Jelgava , Jelgava raj. Tukums, Dobele, Dobeles raj. Saldus.
 		</p>
 		<p>Kontakttālrunis: <br> Latvija (+371)25168126 <br> Zviedrija (+46)735693213 </p>
 		<p>e-pasts: brugecelu@brugecelu.lv</p>
@@ -76,5 +76,7 @@
 
 <footer><p>www.pavingsia.lv Copyright &copy; 2020</p></footer>
 
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="libs/v6.3.1-dist/ol.js"></script>
 </body>
 </html>
