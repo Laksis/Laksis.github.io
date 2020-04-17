@@ -1,806 +1,712 @@
-/****************** Globālas lietas *******************/
-
-/**************
-#1d1e22 - tumšss kā bija bg
-align-items: center;
-************/
-
-
 body {
-	background-color: #fff5d7;
-	color: #1d1e22;
-	font-family: 'Roboto', sans-serif;
-	font-size: 16px;
-	line-height: 1.6em;
-	margin: auto;
-	width: 100%;
+background-color:#fff7df;
+color:#1d1e22;
+font-family:'Roboto',sans-serif;
+font-size:16px;
+line-height:1.6em;
+margin:auto;
+width:100%
 }
 
 h1 {
-	font-size: 20px;
-	letter-spacing: 1px;
+font-size:20px;
+letter-spacing:1px
 }
 
-
-@media screen and (min-width:768px){
-	body{
-	background-color: #fff5d7;
-	color: #1d1e22;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	line-height: 1.6em;
-	margin: auto;
-	width: 80%;
-	}
+@media screen and (min-width:768px) {
+body {
+background-color:#fff7df;
+color:#1d1e22;
+font-family:'Roboto',sans-serif;
+font-size:18px;
+line-height:1.6em;
+margin:auto;
+width:80%
 }
-
+}
 
 ul {
-	list-style-type: none;
-	padding: 0;
+list-style-type:none;
+padding:0
 }
-
 
 a {
-	text-decoration: none;
+text-decoration:none
 }
-
-/************************ Header lapas augšpuse logo un socialie tīkli ************/
 
 header {
-	display: flex;
-	flex-wrap: wrap;
-	margin: 0 auto;
-	width: 100%;
-	padding: 0px;
-	border-bottom: 0px solid #6a6d7c;
+display:flex;
+flex-wrap:wrap;
+margin:0 auto;
+width:100%;
+padding:0;
+border-bottom:0 solid #6a6d7c
 }
 
- header ul{
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: center;
+header ul {
+display:flex;
+flex-wrap:wrap;
+justify-content:center
 }
 
-nav a{
-	color: #1d1e22;
-	font-size: 18px;
+nav a {
+color:#1d1e22;
+font-size:18px
 }
 
-header h2{
-	font-size: 21px;
-	color: #2f1728;
+header h2 {
+font-size:21px;
+color:#2f1728
 }
 
 .logo {
-	margin: 0 0 0 30px;
-	padding-top: 10px;
+margin:0 0 0 30px;
+padding-top:10px
 }
 
-.logo img{
-	width: 80%;
+.logo img {
+width:80%
 }
 
-
-.container-social{
-	margin: 0 auto;
-	display: none;
+.container-social {
+margin:0 auto;
+display:none
 }
 
-
-.container-social ul{
-	margin: 0;
+.container-social ul {
+margin:0
 }
 
 .container-social li {
-	padding: 0 8px;
+padding:0 8px
 }
 
-
-@media screen and (min-width:768px){
-	header{
-	display: flex;
-	justify-content: space-between;
-	padding-top: 10px;
-	border-bottom: 1px solid #6a6d7c;
-	align-items: flex-end;
-	}
-
-	nav a{
-	color: #1d1e22;
-	font-size: 20px;
+@media screen and (min-width:768px) {
+header {
+display:flex;
+justify-content:space-between;
+padding-top:10px;
+border-bottom:1px solid #6a6d7c;
+align-items:flex-end
 }
 
-	.logo {
-	margin: 0;
-	width: auto;
+nav a {
+color:#1d1e22;
+font-size:20px
 }
 
-	.logo img{
-	width: 100%;
-}
-	.container-social{
-	margin:0;
-	display: flex;
+.logo {
+margin:0;
+width:auto
 }
 
-	#mailto {
-	display: flex;
+.logo img {
+width:100%
 }
 
-}
-
-
-/************ Soc ikonas header *****************************/
-
-
-
-.fab {
-	color: #2f1728;
-}
-
- .far {
-   color:#2f1728;
-}
-
-.fas {
-	color:#2f1728;
-}
-
-
-
-
-/* ******************* Navigācija ********************/
-nav {
-	margin-bottom: 2px;
-	padding-top: 0;
-	border-bottom: 1px solid #6a6d7c;
-}
-
-nav ul{
-	display: flex;
-	justify-content: flex-start;
-	margin: 0 auto;
-	padding: 0;
-}
-
-nav ul li{
-	list-style: none;
-	position: relative;
-	padding: 5px 0;
-	transition: 0.5s;
-	box-sizing: border-box;
-}
-
-nav ul li a:hover{
-	color: #82737E;
-}
-
-nav ul li:last-child{
-	border-right: none;
-}
-
-nav ul li a {
-	text-decoration: none;
-	padding: 0 20px;
-	color: #1d1e22;
-}
-
-/*****************Sub navigācija *************/
-
-nav ul li ul {
-	position: absolute;
-	top: 40px;
-	left: 0;
-	background-color: #fff5d7;
-	display: block;
-	width: 200px;
-	transition: 0.5s;
-	opacity: 0;
-	visibility: hidden;
-	z-index: 1;
-}
-
-nav ul li:hover ul{
-	opacity: 1;
-	visibility: visible;
-}
-
-nav ul li ul li {
-	border-right: none;
-	border-bottom: 1px solid #6a6d7c;
-}
-
-@media screen and (max-width: 768px){
-
-	nav {
-	margin-bottom: 0px;
-	border-bottom: 0px solid #6a6d7c;
-}
-
-	.firstsub{
-	border-top: 1px solid #6a6d7c;
-	}
-
-	nav ul{
-		display: block;
-		text-align: center;
-	}
-
-	nav ul li {
-		display: block;
-		padding: 5px 0;
-		border-bottom: 1px solid #6a6d7c;
-	}
-
-	nav ul li ul{
-		width: 100%;
-		top: 35px;
-		z-index: 1;
-	}
-
-	
-}
-
-
-
-
-/***************** Cover video jeb galvenais baneris *********/
-
-video {
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-		margin: auto;
-  		width: 100%;
-  		height: auto;
-  		margin-left: 1px;
-  		margin-right: 1px;
-	}
-
-#web {
-	display: none;
-}
-
-#mobile{
-	display: flex;
-}
-
-
-
-
-@media screen and (min-width: 415px){
-
-	video{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-around;
-		margin: 0 auto;
-  		width: 100%;
-  		height: auto;
-  		border-radius: 3px;
-  		z-index: 10;
-	}
-
-#web {
- display: flex;
-}
-
-#mobile {
-	display: none;
+.container-social {
+margin:0;
+display:flex
 }
 
 #mailto {
-	display: flex;
+display:flex
+}
 }
 
+.fab {
+color:#2f1728
 }
 
-
-/******************************Par mums ! Apraksts par mūsu uzņēmumu*********************/
-
-.parmums-1{
-	width: 80%;
-	margin: 0 auto;
-	padding: 0;
+.far {
+color:#2f1728
 }
 
-.parmums-1 h1{
-	text-align: center;
-	background-color: rgba(122, 125, 144, 0.15);
-	padding: 3px;
-	font-weight: 200;
-	text-transform: uppercase;
+.fas {
+color:#2f1728
+}
+
+nav {
+margin-bottom:2px;
+padding-top:0;
+border-bottom:1px solid #6a6d7c
+}
+
+nav ul {
+display:flex;
+justify-content:flex-start;
+margin:0 auto;
+padding:0
+}
+
+nav ul li {
+list-style:none;
+position:relative;
+padding:5px 0;
+transition:.5s;
+box-sizing:border-box
+}
+
+nav ul li a:hover {
+color:#82737E
+}
+
+nav ul li:last-child {
+border-right:none
+}
+
+nav ul li a {
+text-decoration:none;
+padding:0 20px;
+color:#1d1e22
+}
+
+nav ul li ul {
+position:absolute;
+top:40px;
+left:0;
+background-color:#fff7df;
+display:block;
+width:200px;
+transition:.5s;
+opacity:0;
+visibility:hidden;
+z-index:1
+}
+
+nav ul li:hover ul {
+opacity:1;
+visibility:visible
+}
+
+nav ul li ul li {
+border-right:none;
+border-bottom:1px solid #6a6d7c
+}
+
+@media screen and (max-width: 768px) {
+nav {
+margin-bottom:0;
+border-bottom:0 solid #6a6d7c
+}
+
+.firstsub {
+border-top:1px solid #6a6d7c
+}
+
+nav ul {
+display:block;
+text-align:center
+}
+
+nav ul li {
+display:block;
+padding:5px 0;
+border-bottom:1px solid #6a6d7c
+}
+
+nav ul li ul {
+width:100%;
+top:35px;
+z-index:1
+}
+}
+
+video {
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between;
+margin:auto;
+width:100%;
+height:auto;
+margin-left:1px;
+margin-right:1px
+}
+
+#web {
+display:none
+}
+
+#mobile {
+display:flex
+}
+
+@media screen and (min-width: 415px) {
+video {
+display:flex;
+flex-wrap:wrap;
+justify-content:space-around;
+margin:0 auto;
+width:100%;
+height:auto;
+border-radius:3px;
+z-index:10
+}
+
+#web {
+display:flex
+}
+
+#mobile {
+display:none
+}
+
+#mailto {
+display:flex
+}
+}
+
+.parmums-1 {
+width:80%;
+margin:0 auto;
+padding:0
+}
+
+.parmums-1 h1 {
+text-align:center;
+background-color:rgba(122,125,144,0.08);
+padding:3px;
+font-weight:200;
+text-transform:uppercase
 }
 
 .parmums p {
-	width: 100%;
-	text-align: center;
-	margin: auto;
+width:100%;
+text-align:center;
+margin:auto
 }
 
-
-@media screen and (min-width:768px){
-	.parmums-1 h1{
-	text-align: left;
-	background-color: rgba(122, 125, 144, 0.15);
-	padding: 5px;
+@media screen and (min-width:768px) {
+.parmums-1 h1 {
+text-align:left;
+background-color:rgba(122,125,144,0.08);
+padding:5px
 }
 
 .parmums p {
-	width: 100%;
-	text-align: left;
-	margin: auto;
+width:100%;
+text-align:left;
+margin:auto
 }
 
-.parmums-1{
-	width: 100%;
+.parmums-1 {
+width:100%
+}
 }
 
+.box a {
+color:#1d1e22
 }
 
-
-/* ************************* Pakalpojumu kastes ************ */
-
-.box a{
-	color: #1d1e22;
+.box a:hover {
+color:#6a6d7c
 }
 
-.box a:hover{
-	color: #6a6d7c;
-}
-
-.container p{
-	width: 80%;
-	text-align: center;
-	margin: auto;
+.container p {
+width:80%;
+text-align:center;
+margin:auto
 }
 
 .pakalpojumi-1 {
-	width: 80%;
-	margin: 0 auto;
+width:80%;
+margin:0 auto
 }
 
 .pakalpojumi-1 h1 {
-	text-align: center;
-	background-color: rgba(122, 125, 144, 0.15);
-	padding: 3px;
-	font-weight: 200;
+text-align:center;
+background-color:rgba(122,125,144,0.08);
+padding:3px;
+font-weight:200
 }
 
-
-.box{
- flex: 1;
- text-align: center;
+.box {
+flex:1;
+text-align:center
 }
 
 .box h1 {
-
-	text-align: center;
-	background-color: rgba(122, 125, 144, 0.15);
-	padding: 5px;
-	width: 80%;
-	margin: 0 auto;
-	margin-bottom: 10px;
-	margin-top: 5px;
-	font-weight: 200;
+text-align:center;
+background-color:rgba(122,125,144,0.15);
+padding:5px;
+width:80%;
+margin:0 auto;
+margin-bottom:10px;
+margin-top:5px;
+font-weight:200
 }
 
-
 .box img {
-	border: 3px solid rgba(122, 125, 144, 0.15);
-	opacity: 0.9;
+border:3px solid rgba(122,125,144,0.15);
+opacity:.9
 }
 
 .pakalpojumi a {
-	text-decoration: none;
+text-decoration:none
 }
 
-
-@media (min-width: 768px){
-	.pakalpojumi-1 {
-	padding-top: 0px;
-	width: 100%;
-	margin: 0;
+@media (min-width: 768px) {
+.pakalpojumi-1 {
+padding-top:0;
+width:100%;
+margin:0
 }
 
-	.container{
-display: flex;
-flex-wrap: wrap;
-justify-content: space-between;
-	}
-
-.pakalpojumi-1 h1{
-	text-align: left;
-	background-color: rgba(122, 125, 144, 0.15);
-	padding: 5px;
+.container {
+display:flex;
+flex-wrap:wrap;
+justify-content:space-between
 }
 
-	.container p{
-padding: 0px 35px;
-	}
+.pakalpojumi-1 h1 {
+text-align:left;
+background-color:rgba(122,125,144,0.08);
+padding:5px
 }
 
-
-
-/*********** Footer , lapas pēda ***************/
+.container p {
+padding:0 35px
+}
+}
 
 footer {
-	border-top: 1px solid #d4d4dc;
-	margin-top: 30px;
+border-top:1px solid #d4d4dc;
+margin-top:30px
 }
 
 footer p {
-	text-align: center;
-	margin: 10px;
-	padding: 8px;
+text-align:center;
+margin:10px;
+padding:8px
 }
 
-@media screen and (min-width:768px){
-	footer{
-	border-top: 1px solid #d4d4dc;
-	margin-top: 50px;
-	}
-
-	footer p {
-	text-align: center;
-	margin: 15px;
-	padding: 10px;
-	}
+@media screen and (min-width:768px) {
+footer {
+border-top:1px solid #d4d4dc;
+margin-top:50px
 }
 
-/********** Brugesanas lapa **********/
+footer p {
+text-align:center;
+margin:15px;
+padding:10px
+}
+}
 
-#section-b,
- #section-c {
-	margin-bottom: 20px;
-	margin-top: 40px;
+#section-b,#section-c {
+margin-bottom:20px;
+margin-top:40px
 }
 
 .btn {
-	display: inline-block;
-	background:#1d1e22;
-	color: #fff;
-	text-decoration: none;
-	padding: .5em 1em;
-	border:#666;
-	margin: 2em 0;
-	border-radius: 3px;
+display:inline-block;
+background:#1d1e22;
+color:#fff;
+text-decoration:none;
+padding:.5em 1em;
+border:#666;
+margin:2em 0;
+border-radius:3px
 }
 
-.btn:hover{
-	background: #6a6d7c;
-	text-align: center;
+.btn:hover {
+background:#6a6d7c;
+text-align:center
 }
 
-#showcase{
-	min-height: 250px;
-	color: #1d1e22;
-	text-align: center;
+#showcase,#showcase1,#showcase2 {
+min-height:250px;
+color: #1d1e22;
+  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #1d1e22;
+text-align:center
 }
 
-#showcase1,
- #showcase2{
-	min-height: 250px;
-	color: #ffffff;
-	text-align: center;
+#showcase h1,#showcase1 h1,#showcase2 h1 {
+font-size:25px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
 }
 
-#showcase .bg-image{
-	position: absolute;
-	background: #ffffff url('bildes/showcase/showcase.jpg') ;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 250px;
-	z-index: -1;
-	opacity: 0.9;
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+padding:4em 1.5em 1em
 }
 
-#showcase h1,
- #showcase1 h1,
-  #showcase2 h1 {
-	font-size: 25px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
+#showcase .bg-image {
+position:absolute;
+background:#fff url(bildes/showcase/showcase.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:250px;
+z-index:-1;
+opacity:.9
 }
 
-#showcase .content-wrap,
-#showcase1 .content-wrap,
-#showcase2 .content-wrap {
-	padding: 4em 1.5em 1em 1.5em;
+#showcase1 .bg-image {
+position:absolute;
+background:#fff url(bildes/showcase/showcase3.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:250px;
+z-index:-1;
+opacity:.9;
+margin-top:20px
 }
 
-#showcase1 .bg-image{
-	position: absolute;
-	background: #ffffff url('bildes/showcase/showcase3.jpg') ;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 250px;
-	z-index: -1;
-	opacity: 0.9;
-	margin-top: 20px;
+#showcase2 .bg-image {
+position:absolute;
+background:#fff url(bildes/showcase/showcase4.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:250px;
+z-index:-1;
+opacity:.9;
+margin-top:20px
 }
 
-
-#showcase2 .bg-image{
-	position: absolute;
-	background: #ffffff url('bildes/showcase/showcase4.jpg') ;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 250px;
-	z-index: -1;
-	opacity: 0.9;
-	margin-top: 20px;
+.box ol {
+text-align:left;
+padding:0 2em 1em 6em
 }
 
-.box ol{
-	text-align: left;
-	padding: 0em 2em 1em 6em;
+@media (min-width: 768px) {
+#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image {
+height:300px;
+width:80%
 }
 
-@media (min-width: 768px){
-#showcase .bg-image,
- #showcase1 .bg-image,
-  #showcase2 .bg-image{
-height: 300px;
-width: 80%;
+#showcase h1,#showcase1 h1,#showcase2 h1 {
+font-size:35px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
 }
 
-#showcase h1,
- #showcase1 h1,
-  #showcase2 h1 {
-	font-size: 35px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
-}
-#showcase .content-wrap,
- #showcase1 .content-wrap,
-  #showcase2 .content-wrap{
-	padding: 4em 1.5em 1em 1.5em;
-}
-#showcase,
- #showcase1,
-  #showcase2{
-	min-height: 300px;
-	text-align: center;
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+padding:4em 1.5em 1em
 }
 
-.box ol{
-	text-align: left;
-	padding: 0em 2em 1em 3.5em;
+#showcase,#showcase1,#showcase2 {
+min-height:300px;
+text-align:center
 }
 
-.box .content-wrap{
-	padding: 0em 2em 1em 3.5em;
-
+.box ol {
+text-align:left;
+padding:0 2em 1em 3.5em
 }
 
+.box .content-wrap {
+padding:0 2em 1em 3.5em
+}
 }
 
 table {
-    width: 80%;
-    margin: auto;
+width:80%;
+margin:auto
 }
 
-table, th, td {
-    border: 1px solid #333;
-    border-collapse: collapse;
+table,th,td {
+border:1px solid #333;
+border-collapse:collapse
 }
 
-th, td {
-    padding: 5px 20px;
+th,td {
+padding:5px 20px
 }
-
-/********** Brugesanas lapa **********/
 
 #section-a {
-	margin-bottom: 20px;
-	margin-top: 40px;
+margin-bottom:20px;
+margin-top:40px
 }
 
 .btn {
-	display: inline-block;
-	background:#1d1e22;
-	color: #fff;
-	text-decoration: none;
-	padding: .5em 1em;
-	border:#666;
-	margin: 2em 0;
-	border-radius: 3px;
+display:inline-block;
+background:#1d1e22;
+color:#fff;
+text-decoration:none;
+padding:.5em 1em;
+border:#666;
+margin:2em 0;
+border-radius:3px
 }
 
-.btn:hover{
-	background: #6a6d7c;
-	text-align: center;
+.btn:hover {
+background:#6a6d7c;
+text-align:center
 }
 
-#showcaseZogs{
-	min-height: 250px;
-	color: #1d1e22;
-	text-align: center;
+#showcaseZogs {
+min-height:250px;
+color:#1d1e22;
+text-align:center;
+min-height:250px;
+color: #1d1e22;
+  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #1d1e22;
 }
 
-#showcaseZogs{
-	min-height: 250px;
-	color: #333;
-	text-align: center;
-}
-
-#showcaseZogs .bg-image{
-	position: absolute;
-	background: #ffffff url('bildes/showcase/fence.jpg') ;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-	width: 100%;
-	height: 250px;
-	z-index: -1;
-	opacity: 0.9;
+#showcaseZogs .bg-image {
+position:absolute;
+background:#fff url(bildes/showcase/fence.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:250px;
+z-index:-1;
+opacity:.9
 }
 
 #showcaseZogs h1 {
-	font-size: 25px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
+font-size:25px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
 }
 
 #showcaseZogs .content-wrap {
-	padding: 4em 1.5em 1em 1.5em;
+padding:4em 1.5em 1em
 }
 
-.box ol{
-	text-align: left;
-	padding: 0em 2em 1em 6em;
+.box ol {
+text-align:left;
+padding:0 2em 1em 6em
 }
 
-@media (min-width: 768px){
-#showcaseZogs .bg-image{
-height: 300px;
-width: 80%;
+@media (min-width: 768px) {
+#showcaseZogs .bg-image {
+height:300px;
+width:80%
 }
 
-#showcaseZogs h1{
-	font-size: 35px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
-}
-#showcaseZogs .content-wrap{
-	padding: 4em 1.5em 1em 1.5em;
-}
-#showcaseZogs{
-	min-height: 300px;
-	text-align: center;
+#showcaseZogs h1 {
+font-size:35px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
 }
 
-
-
-
-@media only screen and (min-width : 1024px) {
-    body{
-	background-color: #fff5d7;
-	color: #1d1e22;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	line-height: 1.6em;
-	margin: auto;
-	width: 80%;
-	}
-
-	#showcase .bg-image,
- #showcase1 .bg-image,
-  #showcase2 .bg-image{
-height: 300px;
-width: 80%;
+#showcaseZogs .content-wrap {
+padding:4em 1.5em 1em
 }
 
-#showcase h1,
- #showcase1 h1,
-  #showcase2 h1 {
-	font-size: 35px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
+#showcaseZogs {
+min-height:300px;
+text-align:center
 }
-#showcase .content-wrap,
- #showcase1 .content-wrap,
-  #showcase2 .content-wrap{
-	padding: 4em 1.5em 1em 1.5em;
-}
-#showcase,
- #showcase1,
-  #showcase2{
-	min-height: 300px;
-	text-align: center;
 }
 
-.box ol{
-	text-align: left;
-	padding: 0em 2em 1em 3.5em;
+@media only screen and (min-width: 1024px) {
+body {
+background-color:#fff7df;
+color:#1d1e22;
+font-family:'Roboto',sans-serif;
+font-size:18px;
+line-height:1.6em;
+margin:auto;
+width:80%
 }
 
-.box .content-wrap{
-	padding: 0em 2em 1em 3.5em;
-
+#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image {
+height:300px;
+width:80%
 }
 
+#showcase h1,#showcase1 h1,#showcase2 h1 {
+font-size:35px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
 }
 
-
-@media only screen and (min-width : 1440px) {
-    body{
-	background-color: #fff5d7;
-	color: #1d1e22;
-	font-family: 'Roboto', sans-serif;
-	font-size: 18px;
-	line-height: 1.6em;
-	margin: auto;
-	width: 60%;
-	}
-
-	#showcase .bg-image,
- #showcase1 .bg-image,
-  #showcase2 .bg-image{
-height: 300px;
-width: 60%;
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+padding:4em 1.5em 1em
 }
 
-#showcase h1,
- #showcase1 h1,
-  #showcase2 h1 {
-	font-size: 35px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
-}
-#showcase .content-wrap,
- #showcase1 .content-wrap,
-  #showcase2 .content-wrap{
-	padding: 4em 1.5em 1em 1.5em;
-}
-#showcase,
- #showcase1,
-  #showcase2{
-	min-height: 300px;
-	text-align: center;
+#showcase,#showcase1,#showcase2 {
+min-height:300px;
+text-align:center
 }
 
-.box ol{
-	text-align: left;
-	padding: 0em 2em 1em 3.5em;
+.box ol {
+text-align:left;
+padding:0 2em 1em 3.5em
 }
 
-.box .content-wrap{
-	padding: 0em 2em 1em 3.5em;
-
+.box .content-wrap {
+padding:0 2em 1em 3.5em
+}
 }
 
-#showcaseZogs .bg-image{
-height: 300px;
-width: 60%;
+@media only screen and (min-width: 1440px) {
+body {
+background-color:#fff7df;
+color:#1d1e22;
+font-family:'Roboto',sans-serif;
+font-size:18px;
+line-height:1.6em;
+margin:auto;
+width:60%
 }
 
-#showcaseZogs h1{
-	font-size: 35px;
-	text-transform: uppercase;
-	line-height: 1.5em;
-	margin: 0;
-}
-#showcaseZogs .content-wrap{
-	padding: 4em 1.5em 1em 1.5em;
-}
-#showcaseZogs{
-	min-height: 300px;
-	text-align: center;
+#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image {
+height:300px;
+width:60%
 }
 
+#showcase h1,#showcase1 h1,#showcase2 h1 {
+font-size:35px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
+}
+
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+padding:4em 1.5em 1em
+}
+
+#showcase,#showcase1,#showcase2 {
+min-height:300px;
+text-align:center
+}
+
+.box ol {
+text-align:left;
+padding:0 2em 1em 3.5em
+}
+
+.box .content-wrap {
+padding:0 2em 1em 3.5em
+}
+
+#showcaseZogs .bg-image {
+height:300px;
+width:60%
+}
+
+#showcaseZogs h1 {
+font-size:35px;
+text-transform:uppercase;
+line-height:1.5em;
+margin:0
+}
+
+#showcaseZogs .content-wrap {
+padding:4em 1.5em 1em
+}
+
+#showcaseZogs {
+min-height:300px;
+text-align:center
+}
 }
