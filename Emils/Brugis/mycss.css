@@ -417,13 +417,13 @@ text-align:center
 #showcase,#showcase1,#showcase2 {
 min-height:250px;
 color: #1d1e22;
-  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: #1d1e22;
 text-align:center
 }
 
 #showcase h1,#showcase1 h1,#showcase2 h1 {
+  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #1d1e22;
 font-size:25px;
 text-transform:uppercase;
 line-height:1.5em;
@@ -550,9 +550,6 @@ color:#1d1e22;
 text-align:center;
 min-height:250px;
 color: #1d1e22;
-  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: #1d1e22;
 }
 
 #showcaseZogs .bg-image {
@@ -568,6 +565,9 @@ opacity:.9
 }
 
 #showcaseZogs h1 {
+  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.2px;
+  -webkit-text-stroke-color: #1d1e22;  
 font-size:25px;
 text-transform:uppercase;
 line-height:1.5em;
