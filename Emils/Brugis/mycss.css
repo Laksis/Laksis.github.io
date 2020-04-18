@@ -13,18 +13,6 @@ font-size:20px;
 letter-spacing:1px
 }
 
-@media screen and (min-width:768px) {
-body {
-background-color:#fff7df;
-color:#1d1e22;
-font-family:'Roboto',sans-serif;
-font-size:18px;
-line-height:1.6em;
-margin:auto;
-width:80%
-}
-}
-
 ul {
 list-style-type:none;
 padding:0
@@ -79,39 +67,6 @@ margin:0
 
 .container-social li {
 padding:0 8px
-}
-
-@media screen and (min-width:768px) {
-header {
-display:flex;
-justify-content:space-between;
-padding-top:10px;
-border-bottom:1px solid #6a6d7c;
-align-items:flex-end
-}
-
-nav a {
-color:#1d1e22;
-font-size:20px
-}
-
-.logo {
-margin:0;
-width:auto
-}
-
-.logo img {
-width:100%
-}
-
-.container-social {
-margin:0;
-display:flex
-}
-
-#mailto {
-display:flex
-}
 }
 
 .fab {
@@ -182,34 +137,6 @@ visibility:visible
 nav ul li ul li {
 border-right:none;
 border-bottom:1px solid #6a6d7c
-}
-
-@media screen and (max-width: 768px) {
-nav {
-margin-bottom:0;
-border-bottom:0 solid #6a6d7c
-}
-
-.firstsub {
-border-top:1px solid #6a6d7c
-}
-
-nav ul {
-display:block;
-text-align:center
-}
-
-nav ul li {
-display:block;
-padding:5px 0;
-border-bottom:1px solid #6a6d7c
-}
-
-nav ul li ul {
-width:100%;
-top:35px;
-z-index:1
-}
 }
 
 video {
@@ -381,17 +308,47 @@ padding:8px
 }
 
 @media screen and (min-width:768px) {
-footer {
-border-top:1px solid #d4d4dc;
-margin-top:50px
-}
 
-footer p {
-text-align:center;
-margin:15px;
-padding:10px
-}
-}
+  body {
+  background-color:#fff7df;
+  color:#1d1e22;
+  font-family:'Roboto',sans-serif;
+  font-size:18px;
+  line-height:1.6em;
+  margin:auto;
+  width:80%
+  }
+
+  header {
+  display:flex;
+  justify-content:space-between;
+  padding-top:10px;
+  border-bottom:1px solid #6a6d7c;
+  align-items:flex-end
+  }
+
+  nav a {
+  color:#1d1e22;
+  font-size:20px
+  }
+
+  .logo {
+  margin:0;
+  width:auto
+  }
+
+  .logo img {
+  width:100%
+  }
+
+  .container-social {
+  margin:0;
+  display:flex
+  }
+
+  #mailto {
+  display:flex
+  }
 
 #section-b,#section-c {
 margin-bottom:20px;
@@ -414,24 +371,36 @@ background:#6a6d7c;
 text-align:center
 }
 
-#showcase,#showcase1,#showcase2 {
+#showcase,#showcase1,#showcase2, #showcaseZogs {
 min-height:250px;
 color: #1d1e22;
-  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.8px;
-  -webkit-text-stroke-color: #1d1e22;
 text-align:center
 }
 
-#showcase h1,#showcase1 h1,#showcase2 h1 {
+#showcase h1,#showcase1 h1,#showcase2 h1, #showcaseZogs h1 {
+  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 0.8px;
+  -webkit-text-stroke-color: #1d1e22;
 font-size:25px;
 text-transform:uppercase;
 line-height:1.5em;
 margin:0
 }
 
-#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap, #showcaseZogs .content-wrap {
 padding:4em 1.5em 1em
+}
+
+#showcaseZogs .bg-image {
+position:absolute;
+background:#fff url(bildes/showcase/fence.jpg);
+background-position:center;
+background-repeat:no-repeat;
+background-size:cover;
+width:100%;
+height:250px;
+z-index:-1;
+opacity:.9
 }
 
 #showcase .bg-image {
@@ -477,24 +446,36 @@ text-align:left;
 padding:0 2em 1em 6em
 }
 
+footer {
+border-top:1px solid #d4d4dc;
+margin-top:50px
+}
+
+footer p {
+text-align:center;
+margin:15px;
+padding:10px
+}
+}
+
 @media (min-width: 768px) {
-#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image {
+#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image, #showcaseZogs .bg-image {
 height:300px;
 width:80%
 }
 
-#showcase h1,#showcase1 h1,#showcase2 h1 {
+#showcase h1,#showcase1 h1,#showcase2 h1, #showcaseZogs h1 {
 font-size:35px;
 text-transform:uppercase;
 line-height:1.5em;
 margin:0
 }
 
-#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap, #showcaseZogs .content-wrap {
 padding:4em 1.5em 1em
 }
 
-#showcase,#showcase1,#showcase2 {
+#showcase,#showcase1,#showcase2, #showcaseZogs {
 min-height:300px;
 text-align:center
 }
@@ -526,84 +507,6 @@ padding:5px 20px
 #section-a {
 margin-bottom:20px;
 margin-top:40px
-}
-
-.btn {
-display:inline-block;
-background:#1d1e22;
-color:#fff;
-text-decoration:none;
-padding:.5em 1em;
-border:#666;
-margin:2em 0;
-border-radius:3px
-}
-
-.btn:hover {
-background:#6a6d7c;
-text-align:center
-}
-
-#showcaseZogs {
-min-height:250px;
-color:#1d1e22;
-text-align:center;
-min-height:250px;
-color: #1d1e22;
-  -webkit-text-fill-color: #fff7df; /* Will override color (regardless of order) */
-  -webkit-text-stroke-width: 0.2px;
-  -webkit-text-stroke-color: #1d1e22;
-}
-
-#showcaseZogs .bg-image {
-position:absolute;
-background:#fff url(bildes/showcase/fence.jpg);
-background-position:center;
-background-repeat:no-repeat;
-background-size:cover;
-width:100%;
-height:250px;
-z-index:-1;
-opacity:.9
-}
-
-#showcaseZogs h1 {
-font-size:25px;
-text-transform:uppercase;
-line-height:1.5em;
-margin:0
-}
-
-#showcaseZogs .content-wrap {
-padding:4em 1.5em 1em
-}
-
-.box ol {
-text-align:left;
-padding:0 2em 1em 6em
-}
-
-@media (min-width: 768px) {
-#showcaseZogs .bg-image {
-height:300px;
-width:80%
-}
-
-#showcaseZogs h1 {
-font-size:35px;
-text-transform:uppercase;
-line-height:1.5em;
-margin:0
-}
-
-#showcaseZogs .content-wrap {
-padding:4em 1.5em 1em
-}
-
-#showcaseZogs {
-min-height:300px;
-text-align:center
-}
 }
 
 @media only screen and (min-width: 1024px) {
@@ -659,23 +562,23 @@ margin:auto;
 width:60%
 }
 
-#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image {
+#showcase .bg-image,#showcase1 .bg-image,#showcase2 .bg-image, #showcaseZogs .bg-image {
 height:300px;
 width:60%
 }
 
-#showcase h1,#showcase1 h1,#showcase2 h1 {
+#showcase h1,#showcase1 h1,#showcase2 h1, #showcaseZogs h1 {
 font-size:35px;
 text-transform:uppercase;
 line-height:1.5em;
 margin:0
 }
 
-#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap {
+#showcase .content-wrap,#showcase1 .content-wrap,#showcase2 .content-wrap, #showcaseZogs .content-wrap {
 padding:4em 1.5em 1em
 }
 
-#showcase,#showcase1,#showcase2 {
+#showcase,#showcase1,#showcase2, #showcaseZogs {
 min-height:300px;
 text-align:center
 }
@@ -687,26 +590,5 @@ padding:0 2em 1em 3.5em
 
 .box .content-wrap {
 padding:0 2em 1em 3.5em
-}
-
-#showcaseZogs .bg-image {
-height:300px;
-width:60%
-}
-
-#showcaseZogs h1 {
-font-size:35px;
-text-transform:uppercase;
-line-height:1.5em;
-margin:0
-}
-
-#showcaseZogs .content-wrap {
-padding:4em 1.5em 1em
-}
-
-#showcaseZogs {
-min-height:300px;
-text-align:center
 }
 }
